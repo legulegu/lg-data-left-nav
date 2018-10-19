@@ -1,0 +1,45 @@
+.lg-side-nav-group {
+  background-color: #e3edfa;
+  line-height: 32px;
+  color: #0277bd;
+  font-weight: bold;
+  position: relative;
+}
+
+.lg-side-nav-group-title {
+  padding-left: 30px;
+}
+
+.lg-side-nav-group-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.lg-side-nav-triangle-collapsed {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 5px;
+  border-color: transparent transparent transparent #007bff;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.lg-side-nav-triangle-expanded {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #007bff transparent transparent transparent;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}

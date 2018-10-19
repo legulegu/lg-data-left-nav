@@ -1,0 +1,15 @@
+.lg-side-nav-item {
+  background-color: #F5FBFF;
+  line-height: 32px;
+  padding-left: 30px;
+  border: 1px solid #F5FBFF;
+  &:hover {
+    border: 1px solid #BBDEFB;
+    background-color: #BBDEFB;
+  }
+}
+
+.lg-nav-item-selected {
+  border: 1px solid #BBDEFB;
+  background-color: #BBDEFB;
+}

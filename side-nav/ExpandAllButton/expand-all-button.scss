@@ -1,0 +1,19 @@
+.lg-side-nav-expand-all-button {
+  display: block;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding-left: 30px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #2f81b7;
+  color: white;
+  line-height: 32px;
+}
+
+.lg-side-nav-expand-all-button-icon-plus,
+.lg-side-nav-expand-all-button-icon-minus {
+  float: right;
+  margin-right: 10px;
+}
