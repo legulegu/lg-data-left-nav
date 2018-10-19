@@ -6,6 +6,7 @@ const Link = props => {
   return (
     <a
       href={props.href}
+      target="_blank"
       className={classNames("lg-side-nav-link", props.className)}
       {...props}
     >
