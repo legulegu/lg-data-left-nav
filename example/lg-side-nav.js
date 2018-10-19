@@ -26,9 +26,9 @@ class App extends React.Component {
   }
 
   handleMouseLeave(e) {
-    this.setState({
-      selectedIndex: -1
-    });
+    // this.setState({
+    //   selectedIndex: -1
+    // });
   }
 
   render() {
