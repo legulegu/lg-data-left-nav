@@ -16,6 +16,7 @@ class App extends React.Component {
     super(props);
     this.state = {}
     this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
   }
 
   handleMouseOver(e, index) {
@@ -24,9 +25,15 @@ class App extends React.Component {
     });
   }
 
+  handleMouseLeave(e) {
+    this.setState({
+      selectedIndex: -1
+    });
+  }
+
   render() {
     return (
-      <div className={classNames('lg-side-nav-container')}>
+      <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
         <Nav>
           <NavItem index={1} handleMouseOver={this.handleMouseOver}>
             优酷  
