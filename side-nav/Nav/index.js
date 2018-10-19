@@ -12,7 +12,7 @@ class Nav extends React.Component {
   render() {
     return (
       <ul className={classNames("lg-side-nav", this.props.className)}>
-        {this.clonedChildren}
+        {this.props.children}
       </ul>
     );
   }

@@ -4,13 +4,9 @@ import "./nav-item.scss";
 
 const NavItem = props => {
   return (
-    <li
-      className={classNames(
-        "lg-side-nav-item",
-        { "lg-nav-item-selected": props.selected },
-        props.className
-      )}
-      onMouseOver={handleMouseOver}
+    <li 
+      className={classNames("lg-side-nav-item", { "lg-nav-item-selected": props.selected })}
+      onMouseOver={props.handleMouseOver}
     >
       {props.children}
     </li>
