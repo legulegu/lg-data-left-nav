@@ -3,10 +3,6 @@ import classNames from "classnames";
 import "./nav-item.scss";
 
 const NavItem = props => {
-  const handleClick = e => {
-    e.stopPropagation();
-    props.handleNavItemClick && props.handleNavItemClick(e, props.groupIndex, props.index);
-  };
   return (
     <li
       className={classNames(
@@ -14,7 +10,7 @@ const NavItem = props => {
         { "lg-nav-item-selected": props.selected },
         props.className
       )}
-      onClick={handleClick}
+      onMouseOver={handleMouseOver}
     >
       {props.children}
     </li>

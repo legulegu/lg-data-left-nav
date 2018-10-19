@@ -7,10 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "2.2.5",
-    "js-cookie": "2.2.0",
     "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "unique-concat": "0.2.2"
+    "react-dom": "16.2.0"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
