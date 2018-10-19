@@ -4,7 +4,7 @@ import "./panel.scss";
 
 const Panel = props => {
   return (
-    <div className={classNames('lg-side-nav-panel')}>
+    <div className={classNames('lg-side-nav-panel', { "show": props.show })}>
       {props.children}
     </div>
   );

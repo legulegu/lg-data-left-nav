@@ -11,24 +11,36 @@ import classNames from "classnames";
 import "./lg-side-nav.scss";
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
+    this.state = {}
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+  }
+
+  handleMouseOver(e, index) {
+    this.setState({
+      selectedIndex: index
+    });
   }
 
   render() {
     return (
       <div className={classNames('lg-side-nav-container')}>
         <Nav>
-          <NavItem>
+          <NavItem index={1} handleMouseOver={this.handleMouseOver}>
             优酷  
           </NavItem>
-          <NavItem>
+          <NavItem index={2} handleMouseOver={this.handleMouseOver}>
             土豆  
           </NavItem>
         </Nav>
         <NavPanelGroup>
-          <NavPanel>
+          <NavPanel show={this.state.selectedIndex === 1}>
             <Link href="www.youku.com">电影</Link>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 2}>
+            <Link href="www.youku.com">电视剧</Link>
           </NavPanel>
         </NavPanelGroup>
       </div>
