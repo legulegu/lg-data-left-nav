@@ -1,11 +1,14 @@
 .lg-side-nav-panel-group {
   position: absolute;
   top: 0;
-  left: 181;
-  
+  left: 181px;
+  z-index: 1;
+  width: 957px;
+  height: 400px; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, .05);
   -webkit-transition: top .25s ease;
   -o-transition: top .25s ease;
   -moz-transition: top .25s ease;
   transition: top .25s ease;
+  background-color: white;
 }
