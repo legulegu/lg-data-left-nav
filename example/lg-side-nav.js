@@ -99,6 +99,48 @@ class App extends React.Component {
               <Link href="www.youku.com">美剧</Link>
             </LinkGroup>
           </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 6}>
+            <LinkGroup title="美股">
+              <Link href="/stockdata/market/nasdaq">纳斯达克市盈率</Link>
+              <Link href="/stockdata/market/dow">道琼斯市盈率</Link>
+              <Link href="/stockdata/market/sandp">普标500市盈率</Link>
+            </LinkGroup>
+            <LinkGroup title="港股">
+              <Link href="/stockdata/market/hsi">恒生指数市盈率</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 7}>
+            <LinkGroup title="波段分析">
+              <Link href="/stockdata/market-analysis-shanghai">上证指数波段分析</Link>
+              <Link href="/stockdata/market-analysis-chuangye">创业板波段分析</Link>
+              <Link href="/stockdata/market-analysis-average-price">A股平均股价</Link>
+            </LinkGroup>
+            <LinkGroup title="热度分析">
+              <Link href="/stockdata/market-activity">赚钱效应分析</Link>
+              <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 8}>
+            <LinkGroup>
+              <Link href="/stockdata/below-net-asset-statistics">破净股统计</Link>
+              <Link href="/stockdata/china-10-year-bond-yield">股债轮动指标</Link>
+              <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 9}>
+            <LinkGroup>
+              <Link href="/stockdata/guxilv">A股股息率统计</Link>
+              <Link href="/stockdata/companynum">A股上市公司家数</Link>
+              <Link href="/stockdata/shenzhenguben">深圳A股总股本</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 10}>
+            <LinkGroup>
+              <Link href="/stockdata/pmi">PMI走势</Link>
+              <Link href="/stockdata/m1m2">M1M2走势图</Link>
+              <Link href="/stockdata/broadmoney">M1-M2剪刀差</Link>
+            </LinkGroup>
+          </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
               <Link href="/stockdata/averageposition">仓位数据</Link>
