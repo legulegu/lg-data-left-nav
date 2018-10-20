@@ -107,34 +107,34 @@ class App extends React.Component {
             <LinkGroup>
               <Link href="/stockdata/hs300-pb" target="_blank">沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb" target="_blank">上证50市净率</Link>
-              <Link href="/stockdata/sz180-pb" target="_blank">中证180市净率</Link>
-              <Link href="/stockdata/sz380-pb" target="_blank">中证380市净率</Link>
+              <Link href="/stockdata/zz180-pb" target="_blank">中证180市净率</Link>
+              <Link href="/stockdata/zz380-pb" target="_blank">上证380市净率</Link>
               <Link href="/stockdata/zzlt-pb" target="_blank">中证流通市净率</Link>
-              <Link href="/stockdata/sz100-pb" target="_blank">中证100市净率</Link>
+              <Link href="/stockdata/zz100-pb" target="_blank">中证100市净率</Link>
               <Link href="/stockdata/zz500-pb" target="_blank">中证500市净率</Link>
-              <Link href="/stockdata/sz800-pb" target="_blank">中证800市净率</Link>
-              <Link href="/stockdata/sz1000-pb" target="_blank">中证1000市净率</Link>
+              <Link href="/stockdata/zz800-pb" target="_blank">中证800市净率</Link>
+              <Link href="/stockdata/zz1000-pb" target="_blank">中证1000市净率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 5}>
             <LinkGroup>
-              <Link href="/stockdata/industry" style={{width: 300 + 'px'}}>行业动态市盈率、静态市盈率、市净率、股息率</Link>
+              <Link href="/stockdata/industry" style={{width: 350 + 'px'}}>行业动态市盈率、静态市盈率、市净率、股息率</Link>
             </LinkGroup>
             <LinkGroup title="证监会分类">
               <Link href="/stockdata/industry/zjh/A" industry="true">农、林、牧、渔业</Link>
               <Link href="/stockdata/industry/zjh/B" industry="true">采矿业</Link>
               <Link href="/stockdata/industry/zjh/C" industry="true">制造业</Link>
-              <Link href="/stockdata/industry/zjh/D" industry="true">电力、热力、燃气及水的生产和供应业</Link>
+              <Link href="/stockdata/industry/zjh/D" industry="true">电力、热力、燃气及水业</Link>
               <Link href="/stockdata/industry/zjh/E" industry="true">建筑业</Link>
               <Link href="/stockdata/industry/zjh/F" industry="true">批发和零售业</Link>
               <Link href="/stockdata/industry/zjh/G" industry="true">交通运输、仓储和邮政业</Link>
-              <Link href="/stockdata/industry/zjh/H" industry="true">信息传输、软件和信息技术服务业</Link>
+              <Link href="/stockdata/industry/zjh/H" industry="true">信息传输、软件和信息业</Link>
               <Link href="/stockdata/industry/zjh/I" industry="true">金融业</Link>
               <Link href="/stockdata/industry/zjh/J" industry="true">房地产业</Link>
               <Link href="/stockdata/industry/zjh/K" industry="true">租赁和商务服务业</Link>
               <Link href="/stockdata/industry/zjh/L" industry="true">科学研究和技术服务业</Link>
-              <Link href="/stockdata/industry/zjh/M" industry="true">水利、环境和公共设施管理业</Link>
-              <Link href="/stockdata/industry/zjh/N" industry="true">居民服务、修理和其他服务业</Link>
+              <Link href="/stockdata/industry/zjh/M" industry="true">水利、环境和公共设施</Link>
+              <Link href="/stockdata/industry/zjh/N" industry="true">居民服务、修理行业</Link>
               <Link href="/stockdata/industry/zjh/O" industry="true">教育</Link>
               <Link href="/stockdata/industry/zjh/P" industry="true">卫生和社会工作业</Link>
               <Link href="/stockdata/industry/zjh/Q" industry="true">文化、体育和娱乐业</Link>
