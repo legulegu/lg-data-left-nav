@@ -5,9 +5,9 @@ import "./link-group.scss";
 const LinkGroup = props => {
     return (
         <div className={classNames("lg-side-nav-link-group")}>
-            <div className={classNames("lg-side-nav-link-group-title")}>
+            <h4 className={classNames("lg-side-nav-link-group-title")}>
                 {props.title}
-            </div>
+            </h4>
             <div className={classNames("lg-side-nav-link-group-links")}>
                 {props.children}
             </div>
