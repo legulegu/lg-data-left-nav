@@ -9,6 +9,7 @@ import NavPanel from "../side-nav/NavPanel";
 import classNames from "classnames";
 
 import "./lg-side-nav.scss";
+import LinkGroup from "../side-nav/LinkGroup";
 
 class App extends React.Component {
 
@@ -36,20 +37,31 @@ class App extends React.Component {
       <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
         <Nav>
           <NavItem index={1} handleMouseOver={this.handleMouseOver}>
-            优酷  
+            优酷
           </NavItem>
           <NavItem index={2} handleMouseOver={this.handleMouseOver}>
-            土豆  
+            土豆
           </NavItem>
         </Nav>
         <NavPanelGroup show={this.state.selectedIndex > 0}>
           <NavPanel show={this.state.selectedIndex === 1}>
-            <Link href="www.youku.com">电影</Link>
-            <Link href="www.youku.com">电视剧</Link>
-            <Link href="www.youku.com">美剧</Link>
+            <LinkGroup title="优酷">
+              <Link href="www.youku.com">电影</Link>
+              <Link href="www.youku.com">电视剧</Link>
+              <Link href="www.youku.com">美剧</Link>
+            </LinkGroup>
+            <LinkGroup title="优酷">
+              <Link href="www.youku.com">电影</Link>
+              <Link href="www.youku.com">电视剧</Link>
+              <Link href="www.youku.com">美剧</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
-            <Link href="www.youku.com">电视剧</Link>
+            <LinkGroup title="优酷">
+              <Link href="www.youku.com">电影</Link>
+              <Link href="www.youku.com">电视剧</Link>
+              <Link href="www.youku.com">美剧</Link>
+            </LinkGroup>
           </NavPanel>
         </NavPanelGroup>
       </div>
