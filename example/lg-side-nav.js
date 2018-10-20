@@ -72,31 +72,32 @@ class App extends React.Component {
         </Nav>
         <NavPanelGroup show={this.state.selectedIndex > 0}>
           <NavPanel show={this.state.selectedIndex === 1}>
-            <LinkGroup title="优酷">
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
-            </LinkGroup>
-            <LinkGroup title="优酷">
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
+            <LinkGroup>
+              <Link href="/stockdata/market_pe">A股整体市盈率</Link>
+              <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
+              <Link href="/stockdata/shenzhenPE">深圳A股市盈率</Link>
+              <Link href="/stockdata/zxbPE">中小板市盈率</Link>
+              <Link href="/stockdata/cybPE">创业板市盈率</Link>
+              <Link href="/stockdata/a-ttm-lyr">全部A股市盈率</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 2}>
-            <LinkGroup title="优酷">
-              <Link href="www.youku.com">电影</Link>
-              <Link href="www.youku.com">电视剧</Link>
-              <Link href="www.youku.com">美剧</Link>
+          <NavPanel show={this.state.selectedIndex === 3}>
+            <LinkGroup>
+              <Link href="/stockdata/market_pb" target="_blank">A股整体市净率</Link>
+              <Link href="/stockdata/shanghaiPB" target="_blank">上证A股市净率</Link>
+              <Link href="/stockdata/shenzhenPB" target="_blank">深圳A股市净率</Link>
+              <Link href="/stockdata/zxbPB" target="_blank">中小板市净率</Link>
+              <Link href="/stockdata/cybPB" target="_blank">创业板市净率</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 4}>
+            <LinkGroup>
+              <Link href="/stockdata/market_pe">A股整体市盈率</Link>
+              <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
+              <Link href="/stockdata/shenzhenPE">深圳A股市盈率</Link>
+              <Link href="/stockdata/zxbPE">中小板市盈率</Link>
+              <Link href="/stockdata/cybPE">创业板市盈率</Link>
+              <Link href="/stockdata/a-ttm-lyr">全部A股市盈率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 6}>
