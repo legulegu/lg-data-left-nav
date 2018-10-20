@@ -26,9 +26,9 @@ class App extends React.Component {
   }
 
   handleMouseLeave(e) {
-    // this.setState({
-    //   selectedIndex: -1
-    // });
+    this.setState({
+      selectedIndex: -1
+    });
   }
 
   render() {
@@ -42,9 +42,11 @@ class App extends React.Component {
             土豆  
           </NavItem>
         </Nav>
-        <NavPanelGroup>
+        <NavPanelGroup show={this.state.selectedIndex > 0}>
           <NavPanel show={this.state.selectedIndex === 1}>
             <Link href="www.youku.com">电影</Link>
+            <Link href="www.youku.com">电视剧</Link>
+            <Link href="www.youku.com">美剧</Link>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
             <Link href="www.youku.com">电视剧</Link>
