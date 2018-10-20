@@ -99,6 +99,12 @@ class App extends React.Component {
               <Link href="www.youku.com">美剧</Link>
             </LinkGroup>
           </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 11}>
+            <LinkGroup>
+              <Link href="/stockdata/averageposition">仓位数据</Link>
+              <Link href="/stockdata/a_shares_new_account">新增开户数</Link>
+            </LinkGroup>
+          </NavPanel>
         </NavPanelGroup>
       </div>
     );
