@@ -27,9 +27,9 @@ class App extends React.Component {
   }
 
   handleMouseLeave(e) {
-    // this.setState({
-    //   selectedIndex: -1
-    // });
+    this.setState({
+      selectedIndex: -1
+    });
   }
 
   render() {
@@ -37,10 +37,37 @@ class App extends React.Component {
       <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
         <Nav>
           <NavItem index={1} handleMouseOver={this.handleMouseOver}>
-            优酷
+            A股主板市盈率（PE）
           </NavItem>
           <NavItem index={2} handleMouseOver={this.handleMouseOver}>
-            土豆
+            A股指数市盈率（PE）
+          </NavItem>
+          <NavItem index={3} handleMouseOver={this.handleMouseOver}>
+            A股主板市净率（PB）
+          </NavItem>
+          <NavItem index={4} handleMouseOver={this.handleMouseOver}>
+            A股指数市净率（PB）
+          </NavItem>
+          <NavItem index={5} handleMouseOver={this.handleMouseOver}>
+            行业数据
+          </NavItem>
+          <NavItem index={6} handleMouseOver={this.handleMouseOver}>
+            美股/港股
+          </NavItem>
+          <NavItem index={7} handleMouseOver={this.handleMouseOver}>
+            技术面分析
+          </NavItem>
+          <NavItem index={8} handleMouseOver={this.handleMouseOver}>
+            研究
+          </NavItem>
+          <NavItem index={9} handleMouseOver={this.handleMouseOver}>
+            基本面数据
+          </NavItem>
+          <NavItem index={10} handleMouseOver={this.handleMouseOver}>
+            宏观数据
+          </NavItem>
+          <NavItem index={11} handleMouseOver={this.handleMouseOver}>
+            情绪指标
           </NavItem>
         </Nav>
         <NavPanelGroup show={this.state.selectedIndex > 0}>
