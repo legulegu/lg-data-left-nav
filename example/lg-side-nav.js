@@ -105,12 +105,15 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup>
-              <Link href="/stockdata/market_pe">A股整体市盈率</Link>
-              <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
-              <Link href="/stockdata/shenzhenPE">深圳A股市盈率</Link>
-              <Link href="/stockdata/zxbPE">中小板市盈率</Link>
-              <Link href="/stockdata/cybPE">创业板市盈率</Link>
-              <Link href="/stockdata/a-ttm-lyr">全部A股市盈率</Link>
+              <Link href="/stockdata/hs300-pb" target="_blank">沪深300市净率</Link>
+              <Link href="/stockdata/sz50-pb" target="_blank">上证50市净率</Link>
+              <Link href="/stockdata/sz180-pb" target="_blank">中证180市净率</Link>
+              <Link href="/stockdata/sz380-pb" target="_blank">中证380市净率</Link>
+              <Link href="/stockdata/zzlt-pb" target="_blank">中证流通市净率</Link>
+              <Link href="/stockdata/sz100-pb" target="_blank">中证100市净率</Link>
+              <Link href="/stockdata/zz500-pb" target="_blank">中证500市净率</Link>
+              <Link href="/stockdata/sz800-pb" target="_blank">中证800市净率</Link>
+              <Link href="/stockdata/sz1000-pb" target="_blank">中证1000市净率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 6}>
