@@ -81,6 +81,19 @@ class App extends React.Component {
               <Link href="/stockdata/a-ttm-lyr">全部A股市盈率</Link>
             </LinkGroup>
           </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 2}>
+            <LinkGroup>
+              <Link href="/stockdata/hs300-ttm-lyr" target="_blank">沪深300市盈率</Link>
+              <Link href="/stockdata/sz50-ttm-lyr" target="_blank">上证50市盈率</Link>
+              <Link href="/stockdata/sz180-ttm-lyr" target="_blank">上证180市盈率</Link>
+              <Link href="/stockdata/sz380-ttm-lyr" target="_blank">上证380市盈率</Link>
+              <Link href="/stockdata/zzlt-ttm-lyr" target="_blank">中证流通市盈率</Link>
+              <Link href="/stockdata/zz100-ttm-lyr" target="_blank">中证100市盈率</Link>
+              <Link href="/stockdata/zz500-ttm-lyr" target="_blank">中证500市盈率</Link>
+              <Link href="/stockdata/zz800-ttm-lyr" target="_blank">中证800市盈率</Link>
+              <Link href="/stockdata/zz1000-ttm-lyr" target="_blank">中证1000市盈率</Link>
+            </LinkGroup>
+          </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
             <LinkGroup>
               <Link href="/stockdata/market_pb" target="_blank">A股整体市净率</Link>
