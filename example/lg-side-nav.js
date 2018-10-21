@@ -35,7 +35,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
-        <Nav title="量化导航">
+        <Nav title="全部分类">
           <NavItem index={1} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 1}>
             A股主板市盈率
           </NavItem>
@@ -73,7 +73,7 @@ class App extends React.Component {
         <NavPanelGroup show={this.state.selectedIndex > 0}>
           <NavPanel show={this.state.selectedIndex === 1}>
             <LinkGroup>
-              <Link href="/stockdata/market_pe">A股整体市盈率</Link>
+              <Link href="/stockdata/market_pe">A股平均市盈率</Link>
               <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
               <Link href="/stockdata/shenzhenPE">深圳A股市盈率</Link>
               <Link href="/stockdata/zxbPE">中小板市盈率</Link>
@@ -96,7 +96,7 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
             <LinkGroup>
-              <Link href="/stockdata/market_pb" target="_blank">A股整体市净率</Link>
+              <Link href="/stockdata/market_pb" target="_blank">A股平均市净率</Link>
               <Link href="/stockdata/shanghaiPB" target="_blank">上证A股市净率</Link>
               <Link href="/stockdata/shenzhenPB" target="_blank">深圳A股市净率</Link>
               <Link href="/stockdata/zxbPB" target="_blank">中小板市净率</Link>
