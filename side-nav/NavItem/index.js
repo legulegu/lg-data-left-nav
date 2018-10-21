@@ -10,7 +10,7 @@ const NavItem = props => {
 
   return (
     <li 
-      className={classNames("lg-side-nav-item")}
+      className={classNames("lg-side-nav-item", { "lg-side-nav-item-light": props.highlight })}
       onMouseOver={handleMouseOver}
     >
       {props.children}

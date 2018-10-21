@@ -36,37 +36,37 @@ class App extends React.Component {
     return (
       <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
         <Nav title="量化导航">
-          <NavItem index={1} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={1} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 1}>
             A股主板市盈率
           </NavItem>
-          <NavItem index={2} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={2} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 2}>
             A股指数市盈率
           </NavItem>
-          <NavItem index={3} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={3} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 3}>
             A股主板市净率
           </NavItem>
-          <NavItem index={4} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
             A股指数市净率
           </NavItem>
-          <NavItem index={5} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
             行业数据
           </NavItem>
-          <NavItem index={6} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={6} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 6}>
             美股/港股
           </NavItem>
-          <NavItem index={7} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={7} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 7}>
             技术面分析
           </NavItem>
-          <NavItem index={8} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={8} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 8}>
             研究
           </NavItem>
-          <NavItem index={9} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={9} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 9}>
             基本面数据
           </NavItem>
-          <NavItem index={10} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={10} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 10}>
             宏观数据
           </NavItem>
-          <NavItem index={11} handleMouseOver={this.handleMouseOver}>
+          <NavItem index={11} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 11}>
             情绪指标
           </NavItem>
         </Nav>
