@@ -6,7 +6,11 @@
   z-index: 1;
   transition: top .25s ease;
 }
-
+.lg-side-nav-panel-group-ad {
+  position: absolute;
+  right: 1;
+  top: 20;
+}
 .show {
   display: block;
 }
