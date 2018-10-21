@@ -107,8 +107,8 @@ class App extends React.Component {
             <LinkGroup>
               <Link href="/stockdata/hs300-pb" target="_blank">沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb" target="_blank">上证50市净率</Link>
-              <Link href="/stockdata/zz180-pb" target="_blank">中证180市净率</Link>
-              <Link href="/stockdata/zz380-pb" target="_blank">上证380市净率</Link>
+              <Link href="/stockdata/sz180-pb" target="_blank">上证180市净率</Link>
+              <Link href="/stockdata/sz380-pb" target="_blank">上证380市净率</Link>
               <Link href="/stockdata/zzlt-pb" target="_blank">中证流通市净率</Link>
               <Link href="/stockdata/zz100-pb" target="_blank">中证100市净率</Link>
               <Link href="/stockdata/zz500-pb" target="_blank">中证500市净率</Link>
