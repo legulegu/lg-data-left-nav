@@ -2,7 +2,17 @@
   width: 180px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 42px 0 0 0;
   background: #F5FBFF;
-  border: 1px dashed #E1F5FE;
+}
+
+.lg-side-nav-title {
+  line-height: 42px;
+  padding-left: 20px;
+  background-color: #4a9ce3;
+  color: white;
+  position: absolute;
+  width: 180px;
+  left: 0;
+  top: 0;
 }

@@ -3,19 +3,13 @@ import classNames from "classnames";
 
 import "./nav.scss";
 
-class Nav extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <ul className={classNames("lg-side-nav", this.props.className)}>
-        {this.props.children}
-      </ul>
-    );
-  }
+const Nav = props => {
+  return (
+    <ul className={classNames("lg-side-nav", props.className)}>
+      <li className={classNames("lg-side-nav-title")}>{props.title}</li>
+      {props.children}
+    </ul>
+  );
 }
 
 Nav.defaultProps = {};
