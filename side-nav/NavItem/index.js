@@ -14,6 +14,7 @@ const NavItem = props => {
       onMouseOver={handleMouseOver}
     >
       {props.children}
+      <span className={classNames("arrow")}></span>
     </li>
   );
 };
