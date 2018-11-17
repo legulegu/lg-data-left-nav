@@ -46,7 +46,7 @@ class App extends React.Component {
             行业数据
           </NavItem>
           <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
-            沪深港通
+            沪深港通/融资融券
           </NavItem>
           <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
             美股/港股
@@ -147,12 +147,15 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
-            <LinkGroup >
+            <LinkGroup title="沪深港通">
               <Link href="/stockdata/hu-shen-gang-tong">*沪深港通资金流向</Link>
               <Link href="/stockdata/hu-gu-tong">沪股通</Link>
               <Link href="/stockdata/shen-gu-tong">深股通</Link>
               <Link href="/stockdata/gang-gu-tong-hu">港股通（沪）</Link>
               <Link href="/stockdata/gang-gu-tong-shen">港股通（深）</Link>
+            </LinkGroup>
+            <LinkGroup title="融资融券">
+              <Link href="/stockdata/margin-trading">*融资融券变动</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 5}>
