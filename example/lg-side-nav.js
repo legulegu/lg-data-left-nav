@@ -184,7 +184,7 @@ class App extends React.Component {
               <Link href="/stockdata/below-net-asset-statistics">破净股统计</Link>
               <Link href="/stockdata/china-10-year-bond-yield">股债轮动指标</Link>
               <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
-              <Link href="/stockdata/market-cap-gdp">总市值比GDP</Link>
+              <Link href="/stockdata/marketcap-gdp">总市值比GDP</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 8}>
