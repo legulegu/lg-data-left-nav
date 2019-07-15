@@ -178,6 +178,9 @@ class App extends React.Component {
               <Link href="/stockdata/market-activity">赚钱效应分析</Link>
               <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
             </LinkGroup>
+            <LinkGroup title="技术分析统计">
+              <Link href="/stockdata/ma-statistics">5/20/50日均线统计</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
