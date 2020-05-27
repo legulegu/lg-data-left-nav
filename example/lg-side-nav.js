@@ -55,7 +55,7 @@ class App extends React.Component {
             技术面分析
           </NavItem>
           <NavItem index={7} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 7}>
-            研究
+            底部研究
           </NavItem>
           <NavItem index={8} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 8}>
             基本面数据
@@ -179,11 +179,6 @@ class App extends React.Component {
               <Link href="/stockdata/market-activity">赚钱效应分析</Link>
               <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
             </LinkGroup>
-            <LinkGroup title="技术分析统计">
-              <Link href="/stockdata/ma-statistics">5/20/50日均线统计</Link>
-              <Link href="/stockdata/kdj-statistics">KDJ指标平均值</Link>
-              <Link href="/stockdata/high-low-statistics">创新高、新低数量统计</Link>
-            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
@@ -191,6 +186,9 @@ class App extends React.Component {
               <Link href="/stockdata/china-10-year-bond-yield">股债轮动指标</Link>
               <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
               <Link href="/stockdata/marketcap-gdp">总市值比GDP</Link>
+              <Link href="/stockdata/ma-statistics">5/20/50日均线统计</Link>
+              <Link href="/stockdata/kdj-statistics">KDJ指标平均值</Link>
+              <Link href="/stockdata/high-low-statistics">创新高、新低数量统计</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 8}>
