@@ -76,7 +76,7 @@ class App extends React.Component {
               <Link href="/stockdata/zxbPE">中小板市盈率</Link>
               <Link href="/stockdata/cybPE">创业板市盈率</Link>
               <Link href="/stockdata/ke-chuang-ban-pe">科创板市盈率</Link>
-              <Link href="/stockdata/a-ttm-lyr" large="true">全部A股等权重市盈率</Link>
+              <Link href="/stockdata/a-ttm-lyr" large="true">全部A股市盈率 平均数 中位数</Link>
             </LinkGroup>
             <LinkGroup title="A股指数市盈率">
               <Link href="/stockdata/hs300-ttm-lyr">沪深300市盈率</Link>
