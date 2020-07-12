@@ -207,8 +207,9 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 10}>
             <LinkGroup>
-              <Link href="/stockdata/averageposition">仓位数据</Link>
-              <Link href="/stockdata/a_shares_new_account">新增开户数</Link>
+              <Link href="/stockdata/averageposition">平均持仓与股市同期</Link>
+              <Link href="/stockdata/a_shares_new_account">A股新增开户数（周数据）</Link>
+              <Link href="/stockdata/new-investors">A股新增开户数（月数据）</Link>
             </LinkGroup>
           </NavPanel>
         </NavPanelGroup>
