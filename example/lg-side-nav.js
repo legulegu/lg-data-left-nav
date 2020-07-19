@@ -183,7 +183,7 @@ class App extends React.Component {
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
               <Link href="/stockdata/below-net-asset-statistics">破净股统计</Link>
-              <Link href="/stockdata/china-10-year-bond-yield">股债轮动指标</Link>
+              <Link href="/stockdata/china-10-year-bond-yield" style={{width: '250px'}}>股债轮动指标(十年国债倒数与PE)</Link>
               <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
               <Link href="/stockdata/marketcap-gdp">总市值比GDP</Link>
               <Link href="/stockdata/ma-statistics">5/20/50日均线统计</Link>
