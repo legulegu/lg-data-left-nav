@@ -8,6 +8,15 @@
   -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  position: relative;
+}
+
+.lg-side-nav-panel-ad {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  right: 10;
+  top: 20;
 }
 
 @media (min-width: 768px) {
