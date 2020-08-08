@@ -13,7 +13,7 @@ const Panel = props => {
             <GoogleAd
               client='ca-pub-4841635508396044'
               slot='7158176468'
-              style={{ display: 'inline-block', width: '100px', height: '400px' }}
+              style={{ display: 'inline-block', width: '120px', height: '400px' }}
               format=''
             /> :
             <GoogleAd

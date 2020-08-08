@@ -2,7 +2,18 @@
   line-height: 32px;
   display: inline-block;
   font-size: 15px;
-  width: 150px;
+}
+
+@media (min-width: 992px) {
+  .lg-side-nav-link {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lg-side-nav-link {
+    width: 150px;
+  }
 }
 
 .lg-side-nav-link-large {
