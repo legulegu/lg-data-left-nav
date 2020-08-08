@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class GoogleAd extends React.Component {
 
   componentDidMount() {
-    if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if (window) (window.adsbygoogle = window.adsbygoogle || []).push({});
   };
 
   render() {
@@ -34,7 +34,7 @@ GoogleAd.propTypes = {
 
 GoogleAd.defaultProps = {
   className: '',
-  style: {display: 'block'},
+  style: { display: 'block' },
   format: 'auto',
   layout: '',
   layoutKey: '',
