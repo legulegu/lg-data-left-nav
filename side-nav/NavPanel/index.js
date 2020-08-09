@@ -12,7 +12,7 @@ const Panel = props => {
           document.body.clientWidth < 1200 ?
             <GoogleAd
               client='ca-pub-4841635508396044'
-              slot='7158176468'
+              slot='1482026572'
               style={{ display: 'inline-block', width: '120px', height: '400px' }}
               format=''
             /> :
