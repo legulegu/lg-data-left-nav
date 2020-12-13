@@ -72,14 +72,14 @@ class App extends React.Component {
             <LinkGroup title="A股主要板块市盈率">
               <Link href="/stockdata/market_pe">A股平均市盈率</Link>
               <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
-              <Link href="/stockdata/shenzhenPE">深圳A股市盈率</Link>
+              <Link href="/stockdata/shenzhenPE" highlight>深圳A股市盈率</Link>
               <Link href="/stockdata/zxbPE">中小板市盈率</Link>
-              <Link href="/stockdata/cybPE">创业板市盈率</Link>
+              <Link href="/stockdata/cybPE" highlight>创业板市盈率</Link>
               <Link href="/stockdata/ke-chuang-ban-pe">科创板市盈率</Link>
-              <Link href="/stockdata/a-ttm-lyr" large="true">全部A股市盈率 平均数 中位数</Link>
+              <Link href="/stockdata/a-ttm-lyr" highlight large>全部A股市盈率 平均数 中位数</Link>
             </LinkGroup>
             <LinkGroup title="A股指数市盈率">
-              <Link href="/stockdata/hs300-ttm-lyr">沪深300市盈率</Link>
+              <Link href="/stockdata/hs300-ttm-lyr" highlight>沪深300市盈率</Link>
               <Link href="/stockdata/sz50-ttm-lyr">上证50市盈率</Link>
               <Link href="/stockdata/sz180-ttm-lyr">上证180市盈率</Link>
               <Link href="/stockdata/sz380-ttm-lyr">上证380市盈率</Link>
@@ -91,15 +91,15 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
-            <LinkGroup  title="A股主要板块市净率">
+            <LinkGroup title="A股主要板块市净率">
               <Link href="/stockdata/market_pb">A股平均市净率</Link>
               <Link href="/stockdata/shanghaiPB">上证A股市净率</Link>
-              <Link href="/stockdata/shenzhenPB">深圳A股市净率</Link>
+              <Link href="/stockdata/shenzhenPB" highlight>深圳A股市净率</Link>
               <Link href="/stockdata/zxbPB">中小板市净率</Link>
               <Link href="/stockdata/cybPB">创业板市净率</Link>
             </LinkGroup>
-            <LinkGroup  title="A股指数市净率">
-              <Link href="/stockdata/hs300-pb">沪深300市净率</Link>
+            <LinkGroup title="A股指数市净率">
+              <Link href="/stockdata/hs300-pb" highlight>沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb">上证50市净率</Link>
               <Link href="/stockdata/sz180-pb">上证180市净率</Link>
               <Link href="/stockdata/sz380-pb">上证380市净率</Link>
@@ -112,26 +112,26 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
             <LinkGroup title="证监会分类">
-              <Link href="/stockdata/industry#zjh" large="true">数据总览*</Link>
-              <Link href="/stockdata/industry/zjh/A" large="true">农、林、牧、渔业</Link>
-              <Link href="/stockdata/industry/zjh/B" large="true">采矿业</Link>
-              <Link href="/stockdata/industry/zjh/C" large="true">制造业</Link>
-              <Link href="/stockdata/industry/zjh/D" large="true">电力、热力、燃气及水业</Link>
-              <Link href="/stockdata/industry/zjh/E" large="true">建筑业</Link>
-              <Link href="/stockdata/industry/zjh/F" large="true">批发和零售业</Link>
-              <Link href="/stockdata/industry/zjh/G" large="true">交通运输、仓储和邮政业</Link>
-              <Link href="/stockdata/industry/zjh/H" large="true">住宿和餐饮业</Link>
-              <Link href="/stockdata/industry/zjh/I" large="true">信息传输、软件和信息业</Link>
-              <Link href="/stockdata/industry/zjh/J" large="true">金融业</Link>
-              <Link href="/stockdata/industry/zjh/K" large="true">房地产业</Link>
-              <Link href="/stockdata/industry/zjh/L" large="true">租赁和商务服务业</Link>
-              <Link href="/stockdata/industry/zjh/M" large="true">科学研究和技术服务业</Link>
-              <Link href="/stockdata/industry/zjh/N" large="true">水利、环境和公共设施</Link>
-              <Link href="/stockdata/industry/zjh/O" large="true">居民服务、修理行业</Link>
-              <Link href="/stockdata/industry/zjh/P" large="true">教育</Link>
-              <Link href="/stockdata/industry/zjh/Q" large="true">卫生和社会工作业</Link>
-              <Link href="/stockdata/industry/zjh/R" large="true">文化、体育和娱乐业</Link>
-              <Link href="/stockdata/industry/zjh/S" large="true">综合</Link>
+              <Link href="/stockdata/industry#zjh" large>数据总览*</Link>
+              <Link href="/stockdata/industry/zjh/A" large>农、林、牧、渔业</Link>
+              <Link href="/stockdata/industry/zjh/B" large>采矿业</Link>
+              <Link href="/stockdata/industry/zjh/C" large>制造业</Link>
+              <Link href="/stockdata/industry/zjh/D" large>电力、热力、燃气及水业</Link>
+              <Link href="/stockdata/industry/zjh/E" large>建筑业</Link>
+              <Link href="/stockdata/industry/zjh/F" large>批发和零售业</Link>
+              <Link href="/stockdata/industry/zjh/G" large>交通运输、仓储和邮政业</Link>
+              <Link href="/stockdata/industry/zjh/H" large>住宿和餐饮业</Link>
+              <Link href="/stockdata/industry/zjh/I" large>信息传输、软件和信息业</Link>
+              <Link href="/stockdata/industry/zjh/J" large>金融业</Link>
+              <Link href="/stockdata/industry/zjh/K" large>房地产业</Link>
+              <Link href="/stockdata/industry/zjh/L" large>租赁和商务服务业</Link>
+              <Link href="/stockdata/industry/zjh/M" large>科学研究和技术服务业</Link>
+              <Link href="/stockdata/industry/zjh/N" large>水利、环境和公共设施</Link>
+              <Link href="/stockdata/industry/zjh/O" large>居民服务、修理行业</Link>
+              <Link href="/stockdata/industry/zjh/P" large>教育</Link>
+              <Link href="/stockdata/industry/zjh/Q" large>卫生和社会工作业</Link>
+              <Link href="/stockdata/industry/zjh/R" large>文化、体育和娱乐业</Link>
+              <Link href="/stockdata/industry/zjh/S" large>综合</Link>
             </LinkGroup>
             <LinkGroup title="中证分类">
               <Link href="/stockdata/industry#zz">数据总览*</Link>
@@ -149,24 +149,24 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup title="沪深港通">
-              <Link href="/stockdata/hu-shen-gang-tong">*沪深港通资金流向</Link>
+              <Link href="/stockdata/hu-shen-gang-tong" highlight>*沪深港通资金流向</Link>
               <Link href="/stockdata/hu-gu-tong">沪股通</Link>
               <Link href="/stockdata/shen-gu-tong">深股通</Link>
               <Link href="/stockdata/gang-gu-tong-hu">港股通（沪）</Link>
               <Link href="/stockdata/gang-gu-tong-shen">港股通（深）</Link>
             </LinkGroup>
             <LinkGroup title="融资融券">
-              <Link href="/stockdata/margin-trading">*融资融券变动</Link>
+              <Link href="/stockdata/margin-trading" highlight>*融资融券变动</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 5}>
             <LinkGroup title="美股">
               <Link href="/stockdata/market/nasdaq">纳斯达克市盈率</Link>
               <Link href="/stockdata/market/dow">道琼斯市盈率</Link>
-              <Link href="/stockdata/market/sandp">普标500市盈率</Link>
+              <Link href="/stockdata/market/sandp" highlight>普标500市盈率</Link>
             </LinkGroup>
             <LinkGroup title="港股">
-              <Link href="/stockdata/market/hsi">恒生指数市盈率</Link>
+              <Link href="/stockdata/market/hsi" highlight>恒生指数市盈率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 6}>
@@ -182,11 +182,11 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
-              <Link href="/stockdata/below-net-asset-statistics">破净股统计</Link>
-              <Link href="/stockdata/china-10-year-bond-yield" style={{width: '250px'}}>股债轮动指标(十年国债倒数与PE)</Link>
+              <Link href="/stockdata/below-net-asset-statistics" highlight>破净股统计</Link>
+              <Link href="/stockdata/china-10-year-bond-yield" style={{ width: '250px' }} highlight>股债轮动指标(十年国债倒数与PE)</Link>
               <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
-              <Link href="/stockdata/marketcap-gdp">总市值比GDP</Link>
-              <Link href="/stockdata/ma-statistics">5/20/50日均线统计</Link>
+              <Link href="/stockdata/marketcap-gdp" highlight>总市值比GDP</Link>
+              <Link href="/stockdata/ma-statistics" highlight>5/20/50日均线统计</Link>
               <Link href="/stockdata/kdj-statistics">KDJ指标平均值</Link>
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
             </LinkGroup>
@@ -202,14 +202,14 @@ class App extends React.Component {
             <LinkGroup>
               <Link href="/stockdata/pmi">PMI走势</Link>
               <Link href="/stockdata/m1m2">M1M2走势图</Link>
-              <Link href="/stockdata/broadmoney">M1-M2剪刀差</Link>
+              <Link href="/stockdata/broadmoney" highlight>M1-M2剪刀差</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 10}>
             <LinkGroup>
-              <Link href="/stockdata/averageposition" style={{width: '200px'}}>平均持仓与股市同期</Link>
-              <Link href="/stockdata/a_shares_new_account" style={{width: '200px'}}>A股新增开户数（周数据）</Link>
-              <Link href="/stockdata/new-investors" style={{width: '200px'}}>A股新增开户数（月数据）</Link>
+              <Link href="/stockdata/averageposition" style={{ width: '200px' }}>平均持仓与股市同期</Link>
+              <Link href="/stockdata/a_shares_new_account" style={{ width: '200px' }}>A股新增开户数（周数据）</Link>
+              <Link href="/stockdata/new-investors" style={{ width: '200px' }}>A股新增开户数（月数据）</Link>
             </LinkGroup>
           </NavPanel>
         </NavPanelGroup>
