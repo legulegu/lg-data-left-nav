@@ -81,8 +81,8 @@ class App extends React.Component {
             <LinkGroup title="A股指数市盈率">
               <Link href="/stockdata/hs300-ttm-lyr" highlight>沪深300市盈率</Link>
               <Link href="/stockdata/sz50-ttm-lyr">上证50市盈率</Link>
-              <Link href="/stockdata/sz000015-ttm-lyr">上证红利市盈率</Link>
-              <Link href="/stockdata/sz399324-ttm-lyr">深证红利市盈率</Link>
+              <Link href="/stockdata/sz000015-ttm-lyr" highlight>上证红利市盈率</Link>
+              <Link href="/stockdata/sz399324-ttm-lyr" highlight>深证红利市盈率</Link>
               <Link href="/stockdata/sz180-ttm-lyr">上证180市盈率</Link>
               <Link href="/stockdata/sz380-ttm-lyr">上证380市盈率</Link>
               <Link href="/stockdata/zzlt-ttm-lyr">中证流通市盈率</Link>
@@ -103,8 +103,8 @@ class App extends React.Component {
             <LinkGroup title="A股指数市净率">
               <Link href="/stockdata/hs300-pb" highlight>沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb">上证50市净率</Link>
-              <Link href="/stockdata/sz000015-pb">上证红利市净率</Link>
-              <Link href="/stockdata/sz399324-pb">深证红利市净率</Link>
+              <Link href="/stockdata/sz000015-pb" highlight>上证红利市净率</Link>
+              <Link href="/stockdata/sz399324-pb" highlight>深证红利市净率</Link>
               <Link href="/stockdata/sz180-pb">上证180市净率</Link>
               <Link href="/stockdata/sz380-pb">上证380市净率</Link>
               <Link href="/stockdata/zzlt-pb">中证流通市净率</Link>
