@@ -176,6 +176,8 @@ class App extends React.Component {
           <NavPanel show={this.state.selectedIndex === 6}>
             <LinkGroup title="波段分析">
               <Link href="/stockdata/market-analysis-shanghai">上证指数波段分析</Link>
+              <Link href="/stockdata/market-analysis-szcz">深证成指波段分析</Link>
+              <Link href="/stockdata/market-analysis-hs300">沪深300波段分析</Link>
               <Link href="/stockdata/market-analysis-chuangye">创业板波段分析</Link>
               <Link href="/stockdata/market-analysis-average-price">A股平均股价</Link>
             </LinkGroup>
