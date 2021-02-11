@@ -206,6 +206,7 @@ class App extends React.Component {
             <LinkGroup>
               <Link href="/stockdata/pmi">PMI走势</Link>
               <Link href="/stockdata/m1m2">M1M2走势图</Link>
+              <Link href="/stockdata/m1m2-mom">M1M2和指数走势</Link>
               <Link href="/stockdata/broadmoney" highlight>M1-M2剪刀差</Link>
             </LinkGroup>
           </NavPanel>
