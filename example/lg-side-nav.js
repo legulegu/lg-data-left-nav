@@ -78,7 +78,7 @@ class App extends React.Component {
               <Link href="/stockdata/ke-chuang-ban-pe">科创板市盈率</Link>
               <Link href="/stockdata/a-ttm-lyr" highlight large>全部A股市盈率 平均数 中位数</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市盈率">
+            <LinkGroup title="A股指数市盈率(等权/中位数)">
               <Link href="/stockdata/hs300-ttm-lyr" highlight>沪深300市盈率</Link>
               <Link href="/stockdata/sz50-ttm-lyr">上证50市盈率</Link>
               <Link href="/stockdata/sz000015-ttm-lyr" highlight>上证红利市盈率</Link>
@@ -90,6 +90,11 @@ class App extends React.Component {
               <Link href="/stockdata/zz500-ttm-lyr">中证500市盈率</Link>
               <Link href="/stockdata/zz800-ttm-lyr">中证800市盈率</Link>
               <Link href="/stockdata/zz1000-ttm-lyr">中证1000市盈率</Link>
+            </LinkGroup>
+            <LinkGroup title="A股指数市盈率(加权)">
+              <Link href="/stockdata/weight-pe?marketId=000300.SH">沪深300</Link>
+              <Link href="/stockdata/weight-pe?marketId=000016.SH">上证50</Link>
+              <Link href="/stockdata/weight-pe?marketId=000905.SH">中证500</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
