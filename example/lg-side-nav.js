@@ -118,6 +118,11 @@ class App extends React.Component {
               <Link href="/stockdata/zz800-pb">中证800市净率</Link>
               <Link href="/stockdata/zz1000-pb">中证1000市净率</Link>
             </LinkGroup>
+            <LinkGroup title="A股指数市净率(加权)">
+              <Link href="/stockdata/weight-pb?marketId=000300.SH">沪深300</Link>
+              <Link href="/stockdata/weight-pb?marketId=000016.SH">上证50</Link>
+              <Link href="/stockdata/weight-pb?marketId=000905.SH">中证500</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
             <LinkGroup title="证监会分类">
