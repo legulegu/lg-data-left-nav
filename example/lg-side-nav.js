@@ -221,6 +221,7 @@ class App extends React.Component {
               <Link href="/stockdata/m1m2">M1M2走势图</Link>
               <Link href="/stockdata/m1m2-mom">M1M2和指数走势</Link>
               <Link href="/stockdata/broadmoney" highlight>M1-M2剪刀差</Link>
+              <Link href="/stockdata/m2-gdp" highlight large>M2/GDP货币供应比例_走势图</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 10}>
