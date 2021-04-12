@@ -95,6 +95,8 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pe?marketId=000300.SH">沪深300</Link>
               <Link href="/stockdata/weight-pe?marketId=000016.SH">上证50</Link>
               <Link href="/stockdata/weight-pe?marketId=000905.SH">中证500</Link>
+              <Link href="/stockdata/weight-pe?marketId=399006.SZ">创业板</Link>
+              <Link href="/stockdata/weight-pe?marketId=399001.SZ">深圳平均</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
@@ -122,6 +124,9 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pb?marketId=000300.SH">沪深300</Link>
               <Link href="/stockdata/weight-pb?marketId=000016.SH">上证50</Link>
               <Link href="/stockdata/weight-pb?marketId=000905.SH">中证500</Link>
+              <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板</Link>
+              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深圳平均</Link>
+              <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
