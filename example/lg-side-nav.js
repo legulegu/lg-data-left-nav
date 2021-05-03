@@ -98,8 +98,8 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pe?marketId=000300.SH">沪深300</Link>
               <Link href="/stockdata/weight-pe?marketId=000016.SH">上证50</Link>
               <Link href="/stockdata/weight-pe?marketId=000905.SH">中证500</Link>
-              <Link href="/stockdata/weight-pe?marketId=399006.SZ">创业板</Link>
-              <Link href="/stockdata/weight-pe?marketId=399001.SZ">深圳平均</Link>
+              <Link href="/stockdata/weight-pe?marketId=399006.SZ">创业板指</Link>
+              <Link href="/stockdata/weight-pe?marketId=399001.SZ">深圳成指</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
@@ -111,7 +111,7 @@ class App extends React.Component {
               <Link href="/stockdata/cybPB">创业板市净率</Link>
               <Link href="/stockdata/all-pb" highlight style={{ width: '300px' }}>全部A股市净率 平均数 中位数</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市净率">
+            <LinkGroup title="A股指数市净率(等权/中位数)">
               <Link href="/stockdata/hs300-pb" highlight>沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb">上证50市净率</Link>
               <Link href="/stockdata/sz000015-pb" highlight>上证红利市净率</Link>
@@ -128,8 +128,8 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pb?marketId=000300.SH">沪深300</Link>
               <Link href="/stockdata/weight-pb?marketId=000016.SH">上证50</Link>
               <Link href="/stockdata/weight-pb?marketId=000905.SH">中证500</Link>
-              <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板</Link>
-              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深圳平均</Link>
+              <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板指</Link>
+              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深圳成指</Link>
               <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数</Link>
             </LinkGroup>
           </NavPanel>
