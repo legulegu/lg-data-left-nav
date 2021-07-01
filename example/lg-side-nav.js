@@ -74,7 +74,7 @@ class App extends React.Component {
           <NavPanel show={this.state.selectedIndex === 1}>
             <LinkGroup title="A股主要板块市盈率">
               <Link href="/stockdata/market_pe">A股平均市盈率</Link>
-              <Link href="/stockdata/shanghaiPE">上证A股市盈率</Link>
+              <Link href="/stockdata/shanghaiPE">上证平均市盈率</Link>
               <Link href="/stockdata/shenzhenPE" highlight>深圳A股市盈率</Link>
               <Link href="/stockdata/zxbPE">中小板市盈率</Link>
               <Link href="/stockdata/cybPE" highlight>创业板市盈率</Link>
