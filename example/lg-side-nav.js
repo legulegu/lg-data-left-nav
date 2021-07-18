@@ -172,6 +172,7 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup title="沪深港通">
+              <Link href="/stockdata/hk-hold-sort" highlight>*北向资金买入排名</Link>
               <Link href="/stockdata/hu-shen-gang-tong" highlight>*沪深港通资金流向</Link>
               <Link href="/stockdata/hu-gu-tong">沪股通</Link>
               <Link href="/stockdata/shen-gu-tong">深股通</Link>
