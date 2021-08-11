@@ -129,7 +129,7 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pb?marketId=000016.SH">上证50</Link>
               <Link href="/stockdata/weight-pb?marketId=000905.SH">中证500</Link>
               <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板指</Link>
-              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深圳成指</Link>
+              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深证成指</Link>
               <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数</Link>
             </LinkGroup>
           </NavPanel>
