@@ -180,6 +180,7 @@ class App extends React.Component {
               <TabList>
                 <Tab>一级</Tab>
                 <Tab>二级</Tab>
+                <Tab>三级</Tab>
               </TabList>
               <TabPanel>
                 <Link href="/stockdata/sw-industry?industryCode=801020.SI" >采掘</Link>
@@ -316,6 +317,93 @@ class App extends React.Component {
                 <Link href="/stockdata/sw-industry?industryCode=801193.SI">证券</Link>
                 <Link href="/stockdata/sw-industry?industryCode=801194.SI">保险</Link>
                 <Link href="/stockdata/sw-industry?industryCode=801191.SI">多元金融</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801231.SI">综合</Link>
+              </TabPanel>
+              <TabPanel>
+                <Link href="/stockdata/sw-industry?industryCode=850211.SI">油开采</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850221.SI">煤炭开采</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850222.SI">焦炭加工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850231.SI">其他采掘</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850241.SI">油气钻采服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850242.SI">其他采掘服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850311.SI">石油加工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850313.SI">石油贸易</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850321.SI">纯碱</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850322.SI">氯碱</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850323.SI">无机盐</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850324.SI">其他化学原料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850331.SI">氮肥</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850332.SI">磷肥</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850336.SI">钾肥</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850381.SI">复合肥</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850333.SI">农药</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850334.SI">日用化学产品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850335.SI">涂料油漆油墨制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850337.SI">民爆用品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850338.SI">纺织化学用品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850382.SI">氟化工及制冷剂</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850383.SI">磷化工及磷酸盐</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850339.SI">其他化学制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850372.SI">聚氨酯</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850373.SI">玻纤</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850341.SI">涤纶</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850342.SI">维纶</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850343.SI">粘胶</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850345.SI">氨纶</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850344.SI">其他纤维</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850352.SI">合成革</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850353.SI">改性塑料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850351.SI">其他塑料制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850361.SI">轮胎</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850362.SI">其他橡胶制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850363.SI">炭黑</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850411.SI">普钢</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850412.SI">特钢</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850551.SI">铝</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850552.SI">铜</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850553.SI">铅锌</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850531.SI">黄金</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850541.SI">稀土</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850542.SI">钨</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850543.SI">锂</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850544.SI">其他稀有小金属</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850521.SI">金属新材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850522.SI">磁性材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850523.SI">非金属新材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850612.SI">水泥制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850611.SI">玻璃制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850615.SI">耐火材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850616.SI">管材</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850614.SI">其他建材</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850623.SI">房屋建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857221.SI">装修装饰</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857251.SI">园林工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857231.SI">城轨建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857232.SI">路桥施工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857233.SI">水利工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857234.SI">铁路建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857235.SI">其他基础建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857241.SI">钢结构</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857242.SI">化学工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857243.SI">国际工程承包</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857244.SI">其他专业工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850741.SI">电机</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857321.SI">电网自动化</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857322.SI">工控自动化</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857323.SI">计量仪表</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857331.SI">综合电力设备商</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857332.SI">风电设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857333.SI">光伏设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857334.SI">火电设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857335.SI">储能设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857336.SI">其它电源设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857341.SI">高压设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857342.SI">中压设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857343.SI">低压设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=857344.SI">线缆部件及其他</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850711.SI">机床工具</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850712.SI">机械基础件</Link>
+                <Link href="/stockdata/sw-industry?industryCode=850713.SI">磨具磨料</Link>
                 <Link href="/stockdata/sw-industry?industryCode=801231.SI">综合</Link>
               </TabPanel>
             </Tabs>
