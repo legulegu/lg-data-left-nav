@@ -24,13 +24,13 @@ class App extends React.Component {
 
   handleMouseOver(e, index) {
     this.setState({
-      selectedIndex: 12
+      selectedIndex: index
     });
   }
 
   handleMouseLeave(e) {
     this.setState({
-      selectedIndex: 12
+      selectedIndex: -1
     });
   }
 
