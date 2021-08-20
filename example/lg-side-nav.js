@@ -43,7 +43,10 @@ class App extends React.Component {
             A股市净率
           </NavItem>
           <NavItem index={3} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 3}>
-            行业数据
+            中证行业数据
+          </NavItem>
+          <NavItem index={12} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 12}>
+            申万行业数据
           </NavItem>
           <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
             沪深港通/融资融券
@@ -157,6 +160,64 @@ class App extends React.Component {
               <Link href="/stockdata/industry/zjh/S" large>综合</Link>
             </LinkGroup>
             <LinkGroup title="中证分类">
+              <Link href="/stockdata/industry#zz">数据总览*</Link>
+              <Link href="/stockdata/industry/zz/00">能源</Link>
+              <Link href="/stockdata/industry/zz/01">原材料</Link>
+              <Link href="/stockdata/industry/zz/02">工业</Link>
+              <Link href="/stockdata/industry/zz/03">可选消费</Link>
+              <Link href="/stockdata/industry/zz/04">主要消费</Link>
+              <Link href="/stockdata/industry/zz/05">医药卫生</Link>
+              <Link href="/stockdata/industry/zz/06">金融地产</Link>
+              <Link href="/stockdata/industry/zz/07">信息技术</Link>
+              <Link href="/stockdata/industry/zz/08">电信业务</Link>
+              <Link href="/stockdata/industry/zz/09">公用事业</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 12}>
+            <LinkGroup title="一级">
+              <Link href="/stockdata/sw-industry?industryCode=801020.SI" >采掘</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801030.SI" >化工</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801040.SI" >钢铁</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801050.SI" >有色金属</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801710.SI" >建筑材料</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801720.SI" >建筑装饰</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801730.SI" >电气设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801890.SI" >机械设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801740.SI" >国防军工</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801880.SI" >汽车</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801110.SI" >家用电器</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801130.SI" >纺织服装</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801140.SI" >轻工制造</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801200.SI" >商业贸易</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801010.SI" >农林牧渔</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801120.SI" >食品饮料</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801210.SI" >休闲服务</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801150.SI" >医药生物</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801160.SI" >公用事业</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801170.SI" >交通运输</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801180.SI" >房地产</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801080.SI" >电子</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801750.SI" >计算机</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801760.SI" >传媒</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801770.SI" >通信</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801780.SI" >银行</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801790.SI" >非银金融</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801230.SI" >综合</Link>
+            </LinkGroup>
+            <LinkGroup title="二级">
+              <Link href="/stockdata/industry#zz">数据总览*</Link>
+              <Link href="/stockdata/industry/zz/00">能源</Link>
+              <Link href="/stockdata/industry/zz/01">原材料</Link>
+              <Link href="/stockdata/industry/zz/02">工业</Link>
+              <Link href="/stockdata/industry/zz/03">可选消费</Link>
+              <Link href="/stockdata/industry/zz/04">主要消费</Link>
+              <Link href="/stockdata/industry/zz/05">医药卫生</Link>
+              <Link href="/stockdata/industry/zz/06">金融地产</Link>
+              <Link href="/stockdata/industry/zz/07">信息技术</Link>
+              <Link href="/stockdata/industry/zz/08">电信业务</Link>
+              <Link href="/stockdata/industry/zz/09">公用事业</Link>
+            </LinkGroup>
+            <LinkGroup title="三级">
               <Link href="/stockdata/industry#zz">数据总览*</Link>
               <Link href="/stockdata/industry/zz/00">能源</Link>
               <Link href="/stockdata/industry/zz/01">原材料</Link>

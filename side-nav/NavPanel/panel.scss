@@ -11,25 +11,6 @@
   position: relative;
 }
 
-.lg-side-nav-panel-ad {
-  position: absolute;
-  height: 400px;
-  right: 10px;
-  top: 20px;
-}
-
-@media (min-width: 992px) {
-  .lg-side-nav-panel-ad {
-    width: 120px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .lg-side-nav-panel-ad {
-    width: 200px;
-  }
-}
-
 @media (min-width: 768px) {
   .lg-side-nav-panel {
     width: 800px;
@@ -40,14 +21,14 @@
 @media (min-width: 992px){
   .lg-side-nav-panel {
     width: 755px;
-    padding-right: 70px;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .lg-side-nav-panel {
     width: 1006px;
-    padding-right: 150px;
+    padding-right: 0;
   }
 }
 
