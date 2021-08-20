@@ -205,17 +205,17 @@ class App extends React.Component {
               <Link href="/stockdata/sw-industry?industryCode=801230.SI" >综合</Link>
             </LinkGroup>
             <LinkGroup title="二级">
-              <Link href="/stockdata/industry#zz">数据总览*</Link>
-              <Link href="/stockdata/industry/zz/00">能源</Link>
-              <Link href="/stockdata/industry/zz/01">原材料</Link>
-              <Link href="/stockdata/industry/zz/02">工业</Link>
-              <Link href="/stockdata/industry/zz/03">可选消费</Link>
-              <Link href="/stockdata/industry/zz/04">主要消费</Link>
-              <Link href="/stockdata/industry/zz/05">医药卫生</Link>
-              <Link href="/stockdata/industry/zz/06">金融地产</Link>
-              <Link href="/stockdata/industry/zz/07">信息技术</Link>
-              <Link href="/stockdata/industry/zz/08">电信业务</Link>
-              <Link href="/stockdata/industry/zz/09">公用事业</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801023.SI">石油开采</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801021.SI">煤炭开采</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801022.SI">其他采掘</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801024.SI">采掘服务</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801035.SI">石油化工</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801033.SI">化学原料</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801034.SI">化学制品</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801032.SI">化学纤维</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801036.SI">塑料</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801037.SI">橡胶</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801041.SI">钢铁</Link>
             </LinkGroup>
             <LinkGroup title="三级">
               <Link href="/stockdata/industry#zz">数据总览*</Link>
