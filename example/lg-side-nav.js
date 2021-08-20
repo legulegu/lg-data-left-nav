@@ -216,6 +216,39 @@ class App extends React.Component {
               <Link href="/stockdata/sw-industry?industryCode=801036.SI">塑料</Link>
               <Link href="/stockdata/sw-industry?industryCode=801037.SI">橡胶</Link>
               <Link href="/stockdata/sw-industry?industryCode=801041.SI">钢铁</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801055.SI">工业金属</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801053.SI">黄金</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801054.SI">稀有金属</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801051.SI">金属非金属新材料</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801711.SI">水泥制造</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801712.SI">玻璃制造</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801713.SI">其他建材</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801721.SI">房屋建设</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801722.SI">装修装饰</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801725.SI">园林工程</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801723.SI">基础建设</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801724.SI">专业工程</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801731.SI">电机</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801732.SI">电气自动化设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801733.SI">电源设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801734.SI">高低压设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801072.SI">通用机械</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801074.SI">专用设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801073.SI">仪器仪表</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801075.SI">金属制品</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801076.SI">运输设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801741.SI">航天装备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801742.SI">航空装备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801744.SI">船舶制造</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801094.SI">汽车整车</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801093.SI">汽车零部件</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801092.SI">汽车服务</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801881.SI">其他交运设备</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801111.SI">白色家电</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801112.SI">视听器材</Link>
+              <Link href="/stockdata/sw-industry?industryCode=801131.SI">纺织制造</Link>
             </LinkGroup>
             <LinkGroup title="三级">
               <Link href="/stockdata/industry#zz">数据总览*</Link>
