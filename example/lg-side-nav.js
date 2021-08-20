@@ -10,6 +10,8 @@ import classNames from "classnames";
 
 import "./lg-side-nav.scss";
 import LinkGroup from "../side-nav/LinkGroup";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 class App extends React.Component {
 
@@ -174,156 +176,149 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 12}>
-            <LinkGroup title="一级">
-              <Link href="/stockdata/sw-industry?industryCode=801020.SI" >采掘</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801030.SI" >化工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801040.SI" >钢铁</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801050.SI" >有色金属</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801710.SI" >建筑材料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801720.SI" >建筑装饰</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801730.SI" >电气设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801890.SI" >机械设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801740.SI" >国防军工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801880.SI" >汽车</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801110.SI" >家用电器</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801130.SI" >纺织服装</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801140.SI" >轻工制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801200.SI" >商业贸易</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801010.SI" >农林牧渔</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801120.SI" >食品饮料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801210.SI" >休闲服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801150.SI" >医药生物</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801160.SI" >公用事业</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801170.SI" >交通运输</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801180.SI" >房地产</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801080.SI" >电子</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801750.SI" >计算机</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801760.SI" >传媒</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801770.SI" >通信</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801780.SI" >银行</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801790.SI" >非银金融</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801230.SI" >综合</Link>
-            </LinkGroup>
-            <LinkGroup title="二级">
-              <Link href="/stockdata/sw-industry?industryCode=801023.SI">石油开采</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801021.SI">煤炭开采</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801022.SI">其他采掘</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801024.SI">采掘服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801035.SI">石油化工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801033.SI">化学原料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801034.SI">化学制品</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801032.SI">化学纤维</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801036.SI">塑料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801037.SI">橡胶</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801041.SI">钢铁</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801055.SI">工业金属</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801053.SI">黄金</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801054.SI">稀有金属</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801051.SI">金属非金属新材料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801711.SI">水泥制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801712.SI">玻璃制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801713.SI">其他建材</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801721.SI">房屋建设</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801722.SI">装修装饰</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801725.SI">园林工程</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801723.SI">基础建设</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801724.SI">专业工程</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801731.SI">电机</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801732.SI">电气自动化设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801733.SI">电源设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801734.SI">高低压设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801072.SI">通用机械</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801074.SI">专用设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801073.SI">仪器仪表</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801075.SI">金属制品</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801076.SI">运输设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801741.SI">航天装备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801742.SI">航空装备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801744.SI">船舶制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801094.SI">汽车整车</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801093.SI">汽车零部件</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801092.SI">汽车服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801881.SI">其他交运设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801111.SI">白色家电</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801112.SI">视听器材</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801131.SI">纺织制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801132.SI">服装家纺</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801143.SI">造纸</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801141.SI">包装印刷</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801142.SI">家用轻工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801144.SI">其他轻工制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801203.SI">一般零售</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801204.SI">专业零售</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801205.SI">商业物业经营</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801202.SI">贸易</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801016.SI">种植业</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801015.SI">渔业</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801011.SI">林业</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801014.SI">饲料</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801012.SI">农产品加工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801013.SI">农业综合</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801017.SI">畜禽养殖</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801018.SI">动物保健</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801123.SI">饮料制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801124.SI">食品加工</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801212.SI">景点</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801213.SI">酒店</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801214.SI">旅游综合</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801211.SI">餐饮</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801215.SI">其他休闲服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801151.SI">化学制药</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801155.SI">中药</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801152.SI">生物制品</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801154.SI">医药商业</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801153.SI">医疗器械</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801156.SI">医疗服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801161.SI">电力</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801164.SI">水务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801163.SI">燃气</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801162.SI">环保工程及服务</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801171.SI">港口</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801175.SI">高速公路</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801172.SI">公交</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801173.SI">航空运输</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801174.SI">机场</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801176.SI">航运</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801177.SI">铁路运输</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801178.SI">物流</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801181.SI">房地产开发</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801182.SI">园区开发</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801081.SI">半导体</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801083.SI">元件</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801084.SI">光学光电子</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801082.SI">其他电子</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801085.SI">电子制造</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801101.SI">计算机设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801222.SI">计算机应用</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801761.SI">文化传媒</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801751.SI">营销传播</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801752.SI">互联网传媒</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801223.SI">通信运营</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801102.SI">通信设备</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801192.SI">银行</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801193.SI">证券</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801194.SI">保险</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801191.SI">多元金融</Link>
-              <Link href="/stockdata/sw-industry?industryCode=801231.SI">综合</Link>
-            </LinkGroup>
-            <LinkGroup title="三级">
-              <Link href="/stockdata/industry#zz">数据总览*</Link>
-              <Link href="/stockdata/industry/zz/00">能源</Link>
-              <Link href="/stockdata/industry/zz/01">原材料</Link>
-              <Link href="/stockdata/industry/zz/02">工业</Link>
-              <Link href="/stockdata/industry/zz/03">可选消费</Link>
-              <Link href="/stockdata/industry/zz/04">主要消费</Link>
-              <Link href="/stockdata/industry/zz/05">医药卫生</Link>
-              <Link href="/stockdata/industry/zz/06">金融地产</Link>
-              <Link href="/stockdata/industry/zz/07">信息技术</Link>
-              <Link href="/stockdata/industry/zz/08">电信业务</Link>
-              <Link href="/stockdata/industry/zz/09">公用事业</Link>
-            </LinkGroup>
+            <Tabs>
+              <TabList>
+                <Tab>一级</Tab>
+                <Tab>二级</Tab>
+              </TabList>
+              <TabPanel>
+                <Link href="/stockdata/sw-industry?industryCode=801020.SI" >采掘</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801030.SI" >化工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801040.SI" >钢铁</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801050.SI" >有色金属</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801710.SI" >建筑材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801720.SI" >建筑装饰</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801730.SI" >电气设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801890.SI" >机械设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801740.SI" >国防军工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801880.SI" >汽车</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801110.SI" >家用电器</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801130.SI" >纺织服装</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801140.SI" >轻工制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801200.SI" >商业贸易</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801010.SI" >农林牧渔</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801120.SI" >食品饮料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801210.SI" >休闲服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801150.SI" >医药生物</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801160.SI" >公用事业</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801170.SI" >交通运输</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801180.SI" >房地产</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801080.SI" >电子</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801750.SI" >计算机</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801760.SI" >传媒</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801770.SI" >通信</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801780.SI" >银行</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801790.SI" >非银金融</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801230.SI" >综合</Link>
+              </TabPanel>
+              <TabPanel>
+                <Link href="/stockdata/sw-industry?industryCode=801023.SI">石油开采</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801021.SI">煤炭开采</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801022.SI">其他采掘</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801024.SI">采掘服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801035.SI">石油化工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801033.SI">化学原料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801034.SI">化学制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801032.SI">化学纤维</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801036.SI">塑料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801037.SI">橡胶</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801041.SI">钢铁</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801055.SI">工业金属</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801053.SI">黄金</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801054.SI">稀有金属</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801051.SI">金属非金属新材料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801711.SI">水泥制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801712.SI">玻璃制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801713.SI">其他建材</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801721.SI">房屋建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801722.SI">装修装饰</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801725.SI">园林工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801723.SI">基础建设</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801724.SI">专业工程</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801731.SI">电机</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801732.SI">电气自动化设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801733.SI">电源设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801734.SI">高低压设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801072.SI">通用机械</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801074.SI">专用设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801073.SI">仪器仪表</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801075.SI">金属制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801076.SI">运输设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801741.SI">航天装备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801742.SI">航空装备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801743.SI">地面兵装</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801744.SI">船舶制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801094.SI">汽车整车</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801093.SI">汽车零部件</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801092.SI">汽车服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801881.SI">其他交运设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801111.SI">白色家电</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801112.SI">视听器材</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801131.SI">纺织制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801132.SI">服装家纺</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801143.SI">造纸</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801141.SI">包装印刷</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801142.SI">家用轻工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801144.SI">其他轻工制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801203.SI">一般零售</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801204.SI">专业零售</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801205.SI">商业物业经营</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801202.SI">贸易</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801016.SI">种植业</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801015.SI">渔业</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801011.SI">林业</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801014.SI">饲料</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801012.SI">农产品加工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801013.SI">农业综合</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801017.SI">畜禽养殖</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801018.SI">动物保健</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801123.SI">饮料制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801124.SI">食品加工</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801212.SI">景点</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801213.SI">酒店</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801214.SI">旅游综合</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801211.SI">餐饮</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801215.SI">其他休闲服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801151.SI">化学制药</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801155.SI">中药</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801152.SI">生物制品</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801154.SI">医药商业</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801153.SI">医疗器械</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801156.SI">医疗服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801161.SI">电力</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801164.SI">水务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801163.SI">燃气</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801162.SI">环保工程及服务</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801171.SI">港口</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801175.SI">高速公路</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801172.SI">公交</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801173.SI">航空运输</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801174.SI">机场</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801176.SI">航运</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801177.SI">铁路运输</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801178.SI">物流</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801181.SI">房地产开发</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801182.SI">园区开发</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801081.SI">半导体</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801083.SI">元件</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801084.SI">光学光电子</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801082.SI">其他电子</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801085.SI">电子制造</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801101.SI">计算机设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801222.SI">计算机应用</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801761.SI">文化传媒</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801751.SI">营销传播</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801752.SI">互联网传媒</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801223.SI">通信运营</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801102.SI">通信设备</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801192.SI">银行</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801193.SI">证券</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801194.SI">保险</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801191.SI">多元金融</Link>
+                <Link href="/stockdata/sw-industry?industryCode=801231.SI">综合</Link>
+              </TabPanel>
+            </Tabs>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup title="沪深港通">
