@@ -50,6 +50,9 @@ class App extends React.Component {
           <NavItem index={12} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 12}>
             申万行业数据
           </NavItem>
+          <NavItem index={13} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 13}>
+            主题指数/规模指数
+          </NavItem>
           <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
             沪深港通/融资融券
           </NavItem>
@@ -173,6 +176,41 @@ class App extends React.Component {
               <Link href="/stockdata/industry/zz/07">信息技术</Link>
               <Link href="/stockdata/industry/zz/08">电信业务</Link>
               <Link href="/stockdata/industry/zz/09">公用事业</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 13}>
+          <LinkGroup title="规模指数">
+              <Link href="/stockdata/index-basic?indexCode=000016.SH" large>上证50</Link>
+              <Link href="/stockdata/index-basic?indexCode=000905.SH" large>中证500</Link>
+            </LinkGroup>
+            <LinkGroup title="主题指数">
+              <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000159.SH" large>上证沪股通指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000998.SH" large>中证TMT产业主题指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=930901.SH" large>中证动漫游戏指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=399997.SZ" large>中证白酒</Link>
+              <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
+              <Link href="/stockdata/index-basic?indexCode=921441.CSI" large>中证人工智能50全收益指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
+              <Link href="/stockdata/index-basic?indexCode=930743.CSI" large>中证生物科技主题指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=930742.CSI" large>中证电商</Link>
+              <Link href="/stockdata/index-basic?indexCode=931151.CSI" large>中证光伏产业</Link>
+              <Link href="/stockdata/index-basic?indexCode=930706.CSI" large>中证水泥</Link>
+              <Link href="/stockdata/index-basic?indexCode=000819.SH" large>中证有色金属</Link>
+              <Link href="/stockdata/index-basic?indexCode=399417.SZ" large>国证新能源车指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=399440.SZ" large>国证钢铁</Link>
+              <Link href="/stockdata/index-basic?indexCode=399438.SZ" large>国证电力</Link>
+              <Link href="/stockdata/index-basic?indexCode=399412.SZ" large>国证新能</Link>
+              <Link href="/stockdata/index-basic?indexCode=399394.SZ" large>国证医药</Link>
+              <Link href="/stockdata/index-basic?indexCode=399365.SZ" large>国证农业</Link>
+              <Link href="/stockdata/index-basic?indexCode=399368.SZ" large>国证军工</Link>
+            </LinkGroup>
+            <LinkGroup title="策略指数">
+              <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
+            </LinkGroup>
+            <LinkGroup title="雪球指数">
+              <Link href="/stockdata/index-basic?indexCode=930759.CSI">雪球100</Link>
+              <Link href="/stockdata/index-basic?indexCode=930760.CSI">雪球智选</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 12}>
