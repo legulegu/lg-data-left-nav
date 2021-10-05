@@ -83,13 +83,14 @@ class App extends React.Component {
             <LinkGroup title="A股主要板块市盈率">
               <Link href="/stockdata/market_pe">A股平均市盈率</Link>
               <Link href="/stockdata/shanghaiPE">上证平均市盈率</Link>
-              <Link href="/stockdata/shenzhenPE" highlight>深圳A股市盈率</Link>
-              <Link href="/stockdata/zxbPE">中小板市盈率</Link>
-              <Link href="/stockdata/cybPE" highlight>创业板市盈率</Link>
-              <Link href="/stockdata/ke-chuang-ban-pe">科创板市盈率</Link>
+              <Link href="/stockdata/shenzhenPE" highlight>深圳平均市盈率</Link>
+              <Link href="/stockdata/zxbPE">中小板平均市盈率</Link>
+              <Link href="/stockdata/cybPE" highlight>创业板平均市盈率</Link>
+              <Link href="/stockdata/ke-chuang-ban-pe">科创板平均市盈率</Link>
               <Link href="/stockdata/a-ttm-lyr" highlight large>全部A股市盈率 平均数 中位数</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市盈率(等权/中位数)">
+            <LinkGroup title="A股指数市盈率">
+              <Link href="/stockdata/indices" highlight>指数最新市盈率</Link>
               <Link href="/stockdata/hs300-ttm-lyr" highlight>沪深300市盈率</Link>
               <Link href="/stockdata/sz50-ttm-lyr">上证50市盈率</Link>
               <Link href="/stockdata/sz000015-ttm-lyr" highlight>上证红利市盈率</Link>
@@ -102,12 +103,10 @@ class App extends React.Component {
               <Link href="/stockdata/zz800-ttm-lyr">中证800市盈率</Link>
               <Link href="/stockdata/zz1000-ttm-lyr">中证1000市盈率</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市盈率(加权)">
-              <Link href="/stockdata/weight-pe?marketId=000300.SH">沪深300</Link>
-              <Link href="/stockdata/weight-pe?marketId=000016.SH">上证50</Link>
-              <Link href="/stockdata/weight-pe?marketId=000905.SH">中证500</Link>
-              <Link href="/stockdata/weight-pe?marketId=399006.SZ">创业板指</Link>
-              <Link href="/stockdata/weight-pe?marketId=399001.SZ">深证成指</Link>
+            <LinkGroup title="指数市盈率">
+              <Link href="/stockdata/weight-pe?marketId=399006.SZ">创业板指市盈率</Link>
+              <Link href="/stockdata/weight-pe?marketId=399001.SZ">深证成指市盈率</Link>
+              <Link href="/stockdata/weight-pe?marketId=000001.SH">上证指数市盈率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 2}>
@@ -119,7 +118,8 @@ class App extends React.Component {
               <Link href="/stockdata/cybPB">创业板市净率</Link>
               <Link href="/stockdata/all-pb" highlight style={{ width: '300px' }}>全部A股市净率 平均数 中位数</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市净率(等权/中位数)">
+            <LinkGroup title="A股指数市净率">
+            <Link href="/stockdata/indices" highlight>指数最新市净率</Link>
               <Link href="/stockdata/hs300-pb" highlight>沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb">上证50市净率</Link>
               <Link href="/stockdata/sz000015-pb" highlight>上证红利市净率</Link>
@@ -132,13 +132,10 @@ class App extends React.Component {
               <Link href="/stockdata/zz800-pb">中证800市净率</Link>
               <Link href="/stockdata/zz1000-pb">中证1000市净率</Link>
             </LinkGroup>
-            <LinkGroup title="A股指数市净率(加权)">
-              <Link href="/stockdata/weight-pb?marketId=000300.SH">沪深300</Link>
-              <Link href="/stockdata/weight-pb?marketId=000016.SH">上证50</Link>
-              <Link href="/stockdata/weight-pb?marketId=000905.SH">中证500</Link>
-              <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板指</Link>
-              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深证成指</Link>
-              <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数</Link>
+            <LinkGroup title="指数市净率">
+              <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板指市净率</Link>
+              <Link href="/stockdata/weight-pb?marketId=399001.SZ">深证成指市净率</Link>
+              <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数市净率</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 3}>
