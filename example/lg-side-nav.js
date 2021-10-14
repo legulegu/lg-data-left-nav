@@ -45,10 +45,10 @@ class App extends React.Component {
             A股市净率
           </NavItem>
           <NavItem index={3} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 3}>
-            中证行业数据
+            中证行业
           </NavItem>
           <NavItem index={12} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 12}>
-            申万行业数据
+            申万行业
           </NavItem>
           <NavItem index={13} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 13}>
             主题指数/规模指数
@@ -181,20 +181,20 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=000905.SH" large>中证500</Link>
             </LinkGroup>
             <LinkGroup title="主题指数">
-              <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=000159.SH" large>上证沪股通指数</Link>
-              <Link href="/stockdata/index-basic?indexCode=000998.SH" large>中证TMT产业主题指数</Link>
-              <Link href="/stockdata/index-basic?indexCode=930901.SH" large>中证动漫游戏指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000998.SH" large>中证TMT产业主题</Link>
+              <Link href="/stockdata/index-basic?indexCode=930901.SH" large>中证动漫游戏</Link>
               <Link href="/stockdata/index-basic?indexCode=399997.SZ" large>中证白酒</Link>
               <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
-              <Link href="/stockdata/index-basic?indexCode=921441.CSI" large>中证人工智能50全收益指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=921441.CSI" large>中证人工智能50全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
-              <Link href="/stockdata/index-basic?indexCode=930743.CSI" large>中证生物科技主题指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=930743.CSI" large>中证生物科技主题</Link>
               <Link href="/stockdata/index-basic?indexCode=930742.CSI" large>中证电商</Link>
               <Link href="/stockdata/index-basic?indexCode=931151.CSI" large>中证光伏产业</Link>
               <Link href="/stockdata/index-basic?indexCode=930706.CSI" large>中证水泥</Link>
               <Link href="/stockdata/index-basic?indexCode=000819.SH" large>中证有色金属</Link>
-              <Link href="/stockdata/index-basic?indexCode=399417.SZ" large>国证新能源车指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=399417.SZ" large>国证新能源车</Link>
               <Link href="/stockdata/index-basic?indexCode=399440.SZ" large>国证钢铁</Link>
               <Link href="/stockdata/index-basic?indexCode=399438.SZ" large>国证电力</Link>
               <Link href="/stockdata/index-basic?indexCode=399412.SZ" large>国证新能</Link>
