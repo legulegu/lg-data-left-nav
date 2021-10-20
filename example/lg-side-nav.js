@@ -56,26 +56,20 @@ class App extends React.Component {
           <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
             沪深港通/融资融券
           </NavItem>
-          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
-            美股/港股
-          </NavItem>
-          <NavItem index={6} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 6}>
-            技术面分析
-          </NavItem>
           <NavItem index={7} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 7}>
             底部研究
           </NavItem>
-          <NavItem index={8} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 8}>
-            基本面数据
+          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
+            美股/港股
           </NavItem>
           <NavItem index={9} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 9}>
             宏观数据
           </NavItem>
-          <NavItem index={10} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 10}>
-            情绪指标
-          </NavItem>
           <NavItem index={11} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 11}>
             基金
+          </NavItem>
+          <NavItem index={14} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 14}>
+            综合
           </NavItem>
         </Nav>
         <NavPanelGroup show={this.state.selectedIndex > 0}>
@@ -84,7 +78,6 @@ class App extends React.Component {
               <Link href="/stockdata/market_pe">A股平均市盈率</Link>
               <Link href="/stockdata/shanghaiPE">上证平均市盈率</Link>
               <Link href="/stockdata/shenzhenPE" highlight>深圳平均市盈率</Link>
-              <Link href="/stockdata/zxbPE">中小板平均市盈率</Link>
               <Link href="/stockdata/cybPE" highlight>创业板平均市盈率</Link>
               <Link href="/stockdata/ke-chuang-ban-pe">科创板平均市盈率</Link>
               <Link href="/stockdata/a-ttm-lyr" highlight large>全部A股市盈率 平均数 中位数</Link>
@@ -114,12 +107,12 @@ class App extends React.Component {
               <Link href="/stockdata/market_pb">A股平均市净率</Link>
               <Link href="/stockdata/shanghaiPB">上证A股市净率</Link>
               <Link href="/stockdata/shenzhenPB" highlight>深圳A股市净率</Link>
-              <Link href="/stockdata/zxbPB">中小板市净率</Link>
               <Link href="/stockdata/cybPB">创业板市净率</Link>
+              <Link href="/stockdata/ke-chuang-ban-pb">科创板市净率</Link>
               <Link href="/stockdata/all-pb" highlight style={{ width: '300px' }}>全部A股市净率 平均数 中位数</Link>
             </LinkGroup>
             <LinkGroup title="A股指数市净率">
-            <Link href="/stockdata/indices" highlight>指数最新市净率</Link>
+              <Link href="/stockdata/indices" highlight>指数最新市净率</Link>
               <Link href="/stockdata/hs300-pb" highlight>沪深300市净率</Link>
               <Link href="/stockdata/sz50-pb">上证50市净率</Link>
               <Link href="/stockdata/sz000015-pb" highlight>上证红利市净率</Link>
@@ -176,7 +169,7 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 13}>
-          <LinkGroup title="规模指数">
+            <LinkGroup title="规模指数">
               <Link href="/stockdata/index-basic?indexCode=000016.SH" large>上证50</Link>
               <Link href="/stockdata/index-basic?indexCode=000905.SH" large>中证500</Link>
             </LinkGroup>
@@ -524,19 +517,6 @@ class App extends React.Component {
               <Link href="/stockdata/market/hsi" highlight>恒生指数市盈率</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 6}>
-            <LinkGroup title="波段分析">
-              <Link href="/stockdata/market-analysis-shanghai">上证指数波段分析</Link>
-              <Link href="/stockdata/market-analysis-szcz">深证成指波段分析</Link>
-              <Link href="/stockdata/market-analysis-hs300">沪深300波段分析</Link>
-              <Link href="/stockdata/market-analysis-chuangye">创业板波段分析</Link>
-              <Link href="/stockdata/market-analysis-average-price">A股平均股价</Link>
-            </LinkGroup>
-            <LinkGroup title="热度分析">
-              <Link href="/stockdata/market-activity">赚钱效应分析</Link>
-              <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
-            </LinkGroup>
-          </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
               <Link href="/stockdata/below-net-asset-statistics?marketId=1">全部A股 破净股统计</Link>
@@ -549,13 +529,6 @@ class App extends React.Component {
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 8}>
-            <LinkGroup>
-              <Link href="/stockdata/guxilv">A股股息率统计</Link>
-              <Link href="/stockdata/companynum">A股上市公司家数</Link>
-              <Link href="/stockdata/shenzhenguben">深圳A股总股本</Link>
-            </LinkGroup>
-          </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
             <LinkGroup>
               <Link href="/stockdata/pmi">PMI走势</Link>
@@ -565,18 +538,34 @@ class App extends React.Component {
               <Link href="/stockdata/m2-gdp" highlight large>M2/GDP</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 10}>
-            <LinkGroup>
-              <Link href="/stockdata/averageposition" style={{ width: '200px' }}>平均持仓与股市同期</Link>
-              <Link href="/stockdata/a_shares_new_account" style={{ width: '200px' }}>A股新增开户数（周数据）</Link>
-              <Link href="/stockdata/new-investors" style={{ width: '200px' }}>A股新增开户数（月数据）</Link>
-            </LinkGroup>
-          </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
               <Link href="/stockdata/fund-position/pos-stock" style={{ width: '200px' }}>股票型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-pingheng" style={{ width: '200px' }}>平衡混合型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-linghuo" style={{ width: '200px' }}>灵活配置型基金仓位走势图</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 14}>
+            <LinkGroup title="波段分析">
+              <Link href="/stockdata/market-analysis-shanghai">上证指数波段分析</Link>
+              <Link href="/stockdata/market-analysis-szcz">深证成指波段分析</Link>
+              <Link href="/stockdata/market-analysis-hs300">沪深300波段分析</Link>
+              <Link href="/stockdata/market-analysis-chuangye">创业板波段分析</Link>
+              <Link href="/stockdata/market-analysis-average-price">A股平均股价</Link>
+            </LinkGroup>
+            <LinkGroup title="热度分析">
+              <Link href="/stockdata/market-activity">赚钱效应分析</Link>
+              <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
+            </LinkGroup>
+            <LinkGroup title="基本面分析">
+              <Link href="/stockdata/guxilv">A股股息率统计</Link>
+              <Link href="/stockdata/companynum">A股上市公司家数</Link>
+              <Link href="/stockdata/shenzhenguben">深圳A股总股本</Link>
+            </LinkGroup>
+            <LinkGroup title="情绪指标">
+              <Link href="/stockdata/averageposition" style={{ width: '200px' }}>平均持仓与股市同期</Link>
+              <Link href="/stockdata/a_shares_new_account" style={{ width: '200px' }}>A股新增开户数（周数据）</Link>
+              <Link href="/stockdata/new-investors" style={{ width: '200px' }}>A股新增开户数（月数据）</Link>
             </LinkGroup>
           </NavPanel>
         </NavPanelGroup>
