@@ -515,6 +515,10 @@ class App extends React.Component {
             </LinkGroup>
             <LinkGroup title="港股">
               <Link href="/stockdata/market/hsi" highlight>恒生指数市盈率</Link>
+              <Link href="/stockdata/market/hsf" highlight>恒生金融指数</Link>
+              <Link href="/stockdata/market/hsp" highlight>恒生地产指数</Link>
+              <Link href="/stockdata/market/hsu" highlight>恒生公共指数</Link>
+              <Link href="/stockdata/market/hsci" highlight>恒生工商指数</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
