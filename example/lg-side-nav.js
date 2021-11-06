@@ -170,8 +170,17 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 13}>
             <LinkGroup title="规模指数">
-              <Link href="/stockdata/index-basic?indexCode=000016.SH" large>上证50</Link>
-              <Link href="/stockdata/index-basic?indexCode=000905.SH" large>中证500</Link>
+              <Link href="/stockdata/index-basic?indexCode=000016.SH" large>上证50指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000300.SH" large>沪深300指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000688.SH" large>上证科创板50指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000905.SH" large>中证500指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000015.SH" large>上证红利指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=399324.SZ" large>深证红利指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000010.SH" large>上证180指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000009.SH" large>上证380指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000903.SH" large>中证100指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000906.SH" large>中证800指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=000852.SH" large>中证1000指数</Link>
             </LinkGroup>
             <LinkGroup title="主题指数">
               <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益</Link>
