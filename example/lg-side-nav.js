@@ -190,7 +190,6 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=399997.SZ" large>中证白酒</Link>
               <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=921441.CSI" large>中证人工智能50全收益</Link>
-              <Link href="/stockdata/index-basic?indexCode=h21081.CSI" large>中证半导全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=930743.CSI" large>中证生物科技主题</Link>
               <Link href="/stockdata/index-basic?indexCode=930742.CSI" large>中证电商</Link>
               <Link href="/stockdata/index-basic?indexCode=931151.CSI" large>中证光伏产业</Link>
@@ -203,6 +202,7 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=399394.SZ" large>国证医药</Link>
               <Link href="/stockdata/index-basic?indexCode=399365.SZ" large>国证农业</Link>
               <Link href="/stockdata/index-basic?indexCode=399368.SZ" large>国证军工</Link>
+              <Link href="/stockdata/index-basic?indexCode=000820.CSI" large>煤炭指数</Link>
             </LinkGroup>
             <LinkGroup title="策略指数">
               <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
