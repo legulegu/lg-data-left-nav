@@ -90,7 +90,6 @@ class App extends React.Component {
               <Link href="/stockdata/sz399324-ttm-lyr" highlight>深证红利市盈率</Link>
               <Link href="/stockdata/sz180-ttm-lyr">上证180市盈率</Link>
               <Link href="/stockdata/sz380-ttm-lyr">上证380市盈率</Link>
-              <Link href="/stockdata/zzlt-ttm-lyr">中证流通市盈率</Link>
               <Link href="/stockdata/zz100-ttm-lyr">中证100市盈率</Link>
               <Link href="/stockdata/zz500-ttm-lyr">中证500市盈率</Link>
               <Link href="/stockdata/zz800-ttm-lyr">中证800市盈率</Link>
@@ -119,7 +118,6 @@ class App extends React.Component {
               <Link href="/stockdata/sz399324-pb" highlight>深证红利市净率</Link>
               <Link href="/stockdata/sz180-pb">上证180市净率</Link>
               <Link href="/stockdata/sz380-pb">上证380市净率</Link>
-              <Link href="/stockdata/zzlt-pb">中证流通市净率</Link>
               <Link href="/stockdata/zz100-pb">中证100市净率</Link>
               <Link href="/stockdata/zz500-pb">中证500市净率</Link>
               <Link href="/stockdata/zz800-pb">中证800市净率</Link>
