@@ -317,6 +317,7 @@ class App extends React.Component {
               <Link href="/stockdata/m1m2-mom">M1M2和指数走势</Link>
               <Link href="/stockdata/broadmoney" highlight>M1-M2剪刀差</Link>
               <Link href="/stockdata/m2-gdp" highlight large>M2/GDP</Link>
+              <Link href="/stockdata/m1-ppi" highlight large>M1-PPI</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
