@@ -338,6 +338,7 @@ class App extends React.Component {
             <LinkGroup title="热度分析">
               <Link href="/stockdata/market-activity">赚钱效应分析</Link>
               <Link href="/stockdata/market-activity-trend">赚钱效应日内趋势</Link>
+              <Link href="/stockdata/holder-trade-count" style={{ width: '200px' }}>A股股东增持、减持统计数据</Link>
             </LinkGroup>
             <LinkGroup title="基本面分析">
               <Link href="/stockdata/guxilv">A股股息率统计</Link>
