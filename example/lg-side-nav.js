@@ -220,7 +220,16 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=930742.CSI" large>中证电商</Link>
               <Link href="/stockdata/index-basic?indexCode=931151.CSI" large>中证光伏产业</Link>
               <Link href="/stockdata/index-basic?indexCode=930706.CSI" large>中证水泥</Link>
+              <Link href="/stockdata/index-basic?indexCode=000827.SH" large>中证环保</Link>
+              <Link href="/stockdata/index-basic?indexCode=399989.SZ" large>中证医疗</Link>
+              <Link href="/stockdata/index-basic?indexCode=399971.SZ" large>中证传媒</Link>
+              <Link href="/stockdata/index-basic?indexCode=399967.SZ" large>中证军工</Link>
               <Link href="/stockdata/index-basic?indexCode=000819.SH" large>中证有色金属</Link>
+              <Link href="/stockdata/index-basic?indexCode=000991.SH" large>全指医药</Link>
+              <Link href="/stockdata/index-basic?indexCode=000992.SH" large>全指金融</Link>
+              <Link href="/stockdata/index-basic?indexCode=000990.SH" large>全指消费</Link>
+              <Link href="/stockdata/index-basic?indexCode=000993.SH" large>全指信息</Link>
+              <Link href="/stockdata/index-basic?indexCode=399812.SZ" large>养老产业</Link>
               <Link href="/stockdata/index-basic?indexCode=399417.SZ" large>国证新能源车</Link>
               <Link href="/stockdata/index-basic?indexCode=399440.SZ" large>国证钢铁</Link>
               <Link href="/stockdata/index-basic?indexCode=399438.SZ" large>国证电力</Link>
@@ -229,7 +238,7 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=399365.SZ" large>国证农业</Link>
               <Link href="/stockdata/index-basic?indexCode=399368.SZ" large>国证军工</Link>
               <Link href="/stockdata/index-basic?indexCode=000820.CSI" large>煤炭指数</Link>
-            </LinkGroup>
+            </LinkGroup >
             <LinkGroup title="策略指数">
               <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
             </LinkGroup>
@@ -237,7 +246,7 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=930759.CSI">雪球100</Link>
               <Link href="/stockdata/index-basic?indexCode=930760.CSI">雪球智选</Link>
             </LinkGroup>
-          </NavPanel>
+          </NavPanel >
           <NavPanel show={this.state.selectedIndex === 12}>
             <Tabs>
               <TabList>
@@ -351,8 +360,8 @@ class App extends React.Component {
               <Link href="/stockdata/new-investors" style={{ width: '200px' }}>A股新增开户数（月数据）</Link>
             </LinkGroup>
           </NavPanel>
-        </NavPanelGroup>
-      </div>
+        </NavPanelGroup >
+      </div >
     );
   }
 }
