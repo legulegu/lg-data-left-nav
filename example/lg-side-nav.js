@@ -189,7 +189,7 @@ class App extends React.Component {
               <Link href="/stockdata/industry/zz/30">主要消费</Link>
               <Link href="/stockdata/industry/zz/35">医药卫生</Link>
               <Link href="/stockdata/industry/zz/45">信息技术</Link>
-              <Link href="/stockdata/industry/zz/50">电信业务</Link>
+              <Link href="/stockdata/industry/zz/50">通信服务</Link>
               <Link href="/stockdata/industry/zz/55">公用事业</Link>
             </LinkGroup>
           </NavPanel>
