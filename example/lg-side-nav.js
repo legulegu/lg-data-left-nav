@@ -182,16 +182,15 @@ class App extends React.Component {
             </LinkGroup>
             <LinkGroup title="中证分类">
               <Link href="/stockdata/industry#zz">数据总览*</Link>
-              <Link href="/stockdata/industry/zz/00">能源</Link>
-              <Link href="/stockdata/industry/zz/01">原材料</Link>
-              <Link href="/stockdata/industry/zz/02">工业</Link>
-              <Link href="/stockdata/industry/zz/03">可选消费</Link>
-              <Link href="/stockdata/industry/zz/04">主要消费</Link>
-              <Link href="/stockdata/industry/zz/05">医药卫生</Link>
-              <Link href="/stockdata/industry/zz/06">金融地产</Link>
-              <Link href="/stockdata/industry/zz/07">信息技术</Link>
-              <Link href="/stockdata/industry/zz/08">电信业务</Link>
-              <Link href="/stockdata/industry/zz/09">公用事业</Link>
+              <Link href="/stockdata/industry/zz/10">能源</Link>
+              <Link href="/stockdata/industry/zz/15">原材料</Link>
+              <Link href="/stockdata/industry/zz/20">工业</Link>
+              <Link href="/stockdata/industry/zz/25">可选消费</Link>
+              <Link href="/stockdata/industry/zz/30">主要消费</Link>
+              <Link href="/stockdata/industry/zz/35">医药卫生</Link>
+              <Link href="/stockdata/industry/zz/45">信息技术</Link>
+              <Link href="/stockdata/industry/zz/50">电信业务</Link>
+              <Link href="/stockdata/industry/zz/55">公用事业</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 13}>
