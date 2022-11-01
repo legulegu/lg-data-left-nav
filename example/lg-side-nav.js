@@ -87,11 +87,20 @@ class App extends React.Component {
           <NavItem index={7} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 7}>
             底部研究
           </NavItem>
-          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
-            美股/港股
+          <NavItem index={15} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 15}>
+            市场宽度
+          </NavItem>
+          <NavItem index={16} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 16}>
+            景气度研究
           </NavItem>
           <NavItem index={9} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 9}>
             宏观数据
+          </NavItem>
+          <NavItem index={17} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 17}>
+            券商十大金股
+          </NavItem>
+          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
+            美股/港股
           </NavItem>
           <NavItem index={11} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 11}>
             基金
@@ -333,6 +342,26 @@ class App extends React.Component {
               <Link href="/stockdata/fund-position/pos-stock" style={{ width: '200px' }}>股票型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-pingheng" style={{ width: '200px' }}>平衡混合型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-linghuo" style={{ width: '200px' }}>灵活配置型基金仓位走势图</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 15}>
+            <LinkGroup>
+              <Link href="/stockdata/sw-market-width" style={{ width: '200px' }}>市场宽度（申万行业）</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 16}>
+            <LinkGroup>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=netProfitYoy">净利润增长率</Link>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=orYoy">营业收入增长率</Link>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=opYoy">营业利润增长率</Link>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=trYoy">营业总收入增长率</Link>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=ebtYoy">利润总额增长率</Link>
+              <Link href="/stockdata/middle-avg-indicator?indicatorCode=roeYoy">ROE增长率</Link>
+            </LinkGroup>
+          </NavPanel>
+          <NavPanel show={this.state.selectedIndex === 17}>
+            <LinkGroup>
+              <Link href="/stockdata/broker-recommend-monthly-regression">券商十大金股组合</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 14}>
