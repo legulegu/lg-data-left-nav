@@ -325,6 +325,8 @@ class App extends React.Component {
               <Link href="/stockdata/ma-statistics" highlight>5/20/50日均线统计</Link>
               <Link href="/stockdata/kdj-statistics">KDJ指标平均值</Link>
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
+              <Link href="/stockdata/stock-day-limit" large>沪深A股涨停板特征统计</Link>
+              <Link href="/stockdata/market-style?indexCode=1" large>恐慌&贪心指标</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
