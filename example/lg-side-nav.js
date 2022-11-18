@@ -91,7 +91,7 @@ class App extends React.Component {
             市场宽度
           </NavItem>
           <NavItem index={16} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 16}>
-            景气度研究
+            景气度/拥挤度研究
           </NavItem>
           <NavItem index={9} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 9}>
             宏观数据
@@ -351,14 +351,17 @@ class App extends React.Component {
               <Link href="/stockdata/sw-market-width" style={{ width: '200px' }}>市场宽度（申万行业）</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 16}>
-            <LinkGroup>
+          <NavPanel show={this.state.selectedIndex === 16}>、
+            <LinkGroup title="景气度">
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=netProfitYoy">净利润增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=orYoy">营业收入增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=opYoy">营业利润增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=trYoy">营业总收入增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=ebtYoy">利润总额增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=roeYoy">ROE增长率</Link>
+            </LinkGroup>
+            <LinkGroup title="拥挤度">
+              <Link href="/stockdata/ashares-congestion">大盘拥挤度</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 17}>
