@@ -360,7 +360,7 @@ class App extends React.Component {
               <Link href="/stockdata/sw-market-width" style={{ width: '200px' }}>市场宽度（申万行业）</Link>
             </LinkGroup>
           </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 16}>、
+          <NavPanel show={this.state.selectedIndex === 16}>
             <LinkGroup title="景气度">
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=netProfitYoy">净利润增长率</Link>
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=orYoy">营业收入增长率</Link>
