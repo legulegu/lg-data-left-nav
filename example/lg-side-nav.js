@@ -304,12 +304,21 @@ class App extends React.Component {
               <Link href="/stockdata/market/dow">道琼斯市盈率</Link>
               <Link href="/stockdata/market/sandp" highlight>普标500市盈率</Link>
             </LinkGroup>
-            <LinkGroup title="港股">
-              <Link href="/stockdata/market/hsi" highlight>恒生指数市盈率</Link>
-              <Link href="/stockdata/market/hsf" highlight>恒生金融指数</Link>
-              <Link href="/stockdata/market/hsp" highlight>恒生地产指数</Link>
-              <Link href="/stockdata/market/hsu" highlight>恒生公共指数</Link>
-              <Link href="/stockdata/market/hsci" highlight>恒生工商指数</Link>
+            <LinkGroup title="港股市盈率">
+              <Link href="/stockdata/market/hsi" >恒生指数市盈率</Link>
+              <Link href="/stockdata/market/hsf" >恒生金融指数</Link>
+              <Link href="/stockdata/market/hsp" >恒生地产指数</Link>
+              <Link href="/stockdata/market/hsu" >恒生公共指数</Link>
+              <Link href="/stockdata/market/hsci">恒生工商指数</Link>
+              <Link href="/stockdata/market/hscei">恒生中国企业指数</Link>
+            </LinkGroup>
+            <LinkGroup title="港股股息率">
+              <Link href="/stockdata/market/hk/dv/hsi" >恒生指数股息率</Link>
+              <Link href="/stockdata/market/hk/dv/hsf" >恒生金融指数</Link>
+              <Link href="/stockdata/market/hk/dv/hsp" >恒生地产指数</Link>
+              <Link href="/stockdata/market/hk/dv/hsu" >恒生公共指数</Link>
+              <Link href="/stockdata/market/hk/dv/hsci">恒生工商指数</Link>
+              <Link href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
@@ -361,7 +370,7 @@ class App extends React.Component {
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=roeYoy">ROE增长率</Link>
             </LinkGroup>
             <LinkGroup title="拥挤度">
-              <Link href="/stockdata/ashares-congestion">大盘拥挤度</Link>
+              <Link href="/stockdata/ashares-congestion" style={{ width: '200px' }}>大盘拥挤度(逃顶利器)</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 17}>
