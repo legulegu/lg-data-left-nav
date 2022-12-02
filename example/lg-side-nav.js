@@ -371,6 +371,7 @@ class App extends React.Component {
             </LinkGroup>
             <LinkGroup title="拥挤度">
               <Link href="/stockdata/ashares-congestion" style={{ width: '200px' }}>大盘拥挤度(逃顶利器)</Link>
+              <Link href="/stockdata/sw-congestion" style={{ width: '200px' }}>行业拥挤度</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 17}>
@@ -401,6 +402,10 @@ class App extends React.Component {
               <Link href="/stockdata/averageposition" style={{ width: '200px' }}>平均持仓与股市同期</Link>
               <Link href="/stockdata/a_shares_new_account" style={{ width: '200px' }}>A股新增开户数（周数据）</Link>
               <Link href="/stockdata/new-investors" style={{ width: '200px' }}>A股新增开户数（月数据）</Link>
+            </LinkGroup>
+            <LinkGroup title="追涨情绪">
+              <Link href="/stockdata/emotion-daily?emotionType=limitUp" style={{ width: '200px' }}>昨日涨停指数</Link>
+              <Link href="/stockdata/emotion-daily?emotionType=hotStock" style={{ width: '200px' }}>TOP100指数</Link>
             </LinkGroup>
           </NavPanel>
         </NavPanelGroup >
