@@ -79,7 +79,7 @@ class App extends React.Component {
             申万行业
           </NavItem>
           <NavItem index={13} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 13}>
-            主题指数/规模指数
+            规模指数/行业代表
           </NavItem>
           <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
             沪深港通/融资融券
@@ -215,6 +215,15 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=000903.SH" large>中证100指数</Link>
               <Link href="/stockdata/index-basic?indexCode=000906.SH" large>中证800指数</Link>
               <Link href="/stockdata/index-basic?indexCode=000852.SH" large>中证1000指数</Link>
+            </LinkGroup>
+            <LinkGroup title="制造业">
+              <Link href="/stockdata/index-basic?indexCode=H30531.CSI" >精工制造</Link>
+              <Link href="/stockdata/index-basic?indexCode=930599.CSI" >中证高装</Link>
+              <Link href="/stockdata/index-basic?indexCode=930820.CSI" >CS高端装</Link>
+              <Link href="/stockdata/index-basic?indexCode=399967.SZ" >中证军工</Link>
+              <Link href="/stockdata/index-basic?indexCode=399967.SZ" >国证军工</Link>
+              <Link href="/stockdata/index-basic?indexCode=399417.SZ" >国证新能源车</Link>
+              <Link href="/stockdata/index-basic?indexCode=931151.CSI" >中证光伏产业</Link>
             </LinkGroup>
             <LinkGroup title="主题指数">
               <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益</Link>
