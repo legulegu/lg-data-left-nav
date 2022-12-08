@@ -233,6 +233,14 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=h00121.SH" >上证医药主题全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=930743.CSI" >中证生物科技主题</Link>
             </LinkGroup>
+            <LinkGroup title="消费">
+              <Link href="/stockdata/index-basic?indexCode=931139.CSI" >CS消费50</Link>
+              <Link href="/stockdata/index-basic?indexCode=000990.SH" >全指消费</Link>
+              <Link href="/stockdata/index-basic?indexCode=931068.CSI" >消费龙头</Link>
+              <Link href="/stockdata/index-basic?indexCode=000932.SH" >中证消费</Link>
+              <Link href="/stockdata/index-basic?indexCode=399997.SZ" >中证白酒</Link>
+              <Link href="/stockdata/index-basic?indexCode=399365.SZ" >国证农业</Link>
+            </LinkGroup>
             <LinkGroup title="主题指数">
               <Link href="/stockdata/index-basic?indexCode=h00121.SH" large>上证医药主题全收益</Link>
               <Link href="/stockdata/index-basic?indexCode=000159.SH" large>上证沪股通指数</Link>
