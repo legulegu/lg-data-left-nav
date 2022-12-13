@@ -13,18 +13,20 @@ import LinkGroup from "../side-nav/LinkGroup";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import getUrl from "./url";
+import VerticalGroup from "../side-nav/VerticalGroup";
+import LinkGroupVertical from "../side-nav/LinkGroupVertical";
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {}
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.state = {
       level1SwData: [],
       level2SwData: [],
-      level3SwData: []
+      level3SwData: [],
+      selectedIndex: 13
     }
   }
 
@@ -51,15 +53,15 @@ class App extends React.Component {
   }
 
   handleMouseOver(e, index) {
-    this.setState({
-      selectedIndex: index
-    });
+    // this.setState({
+    //   selectedIndex: index
+    // });
   }
 
   handleMouseLeave(e) {
-    this.setState({
-      selectedIndex: -1
-    });
+    // this.setState({
+    //   selectedIndex: -1
+    // });
   }
 
   render() {
@@ -216,52 +218,54 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=000906.SH" large>中证800指数</Link>
               <Link href="/stockdata/index-basic?indexCode=000852.SH" large>中证1000指数</Link>
             </LinkGroup>
-            <LinkGroup title="制造业">
-              <Link href="/stockdata/index-basic?indexCode=H30531.CSI" highlight>精工制造</Link>
-              <Link href="/stockdata/index-basic?indexCode=930599.CSI" highlight>中证高装</Link>
-              <Link href="/stockdata/index-basic?indexCode=930820.CSI" highlight>CS高端装</Link>
-              <Link href="/stockdata/index-basic?indexCode=399967.SZ" >中证军工</Link>
-              <Link href="/stockdata/index-basic?indexCode=399967.SZ" >国证军工</Link>
-              <Link href="/stockdata/index-basic?indexCode=399417.SZ" >国证新能源车</Link>
-              <Link href="/stockdata/index-basic?indexCode=931151.CSI" >中证光伏产业</Link>
-            </LinkGroup>
-            <LinkGroup title="医药">
-              <Link href="/stockdata/index-basic?indexCode=000991.SH" highlight>全指医药</Link>
-              <Link href="/stockdata/index-basic?indexCode=930791.CSI" highlight>CS医药TI</Link>
-              <Link href="/stockdata/index-basic?indexCode=000933.SH" highlight>中证医药</Link>
-              <Link href="/stockdata/index-basic?indexCode=399394.SZ" highlight>国证医药</Link>
-              <Link href="/stockdata/index-basic?indexCode=h00121.SH" >上证医药主题全收益</Link>
-              <Link href="/stockdata/index-basic?indexCode=930743.CSI" >中证生物科技主题</Link>
-            </LinkGroup>
-            <LinkGroup title="消费">
-              <Link href="/stockdata/index-basic?indexCode=931139.CSI" highlight>CS消费50</Link>
-              <Link href="/stockdata/index-basic?indexCode=000990.SH" highlight>全指消费</Link>
-              <Link href="/stockdata/index-basic?indexCode=931068.CSI" highlight>消费龙头</Link>
-              <Link href="/stockdata/index-basic?indexCode=000932.SH" highlight>中证消费</Link>
-              <Link href="/stockdata/index-basic?indexCode=399997.SZ" >中证白酒</Link>
-              <Link href="/stockdata/index-basic?indexCode=399365.SZ" >国证农业</Link>
-            </LinkGroup>
-            <LinkGroup title="金融">
-              <Link href="/stockdata/index-basic?indexCode=000914.SH" highlight>300金融</Link>
-              <Link href="/stockdata/index-basic?indexCode=000934.SH" highlight>中证金融</Link>
-              <Link href="/stockdata/index-basic?indexCode=000992.SH" highlight>全指金融</Link>
-            </LinkGroup>
-            <LinkGroup title="资源">
-              <Link href="/stockdata/index-basic?indexCode=000944.CSI" highlight>内地资源</Link>
-              <Link href="/stockdata/index-basic?indexCode=000805.CSI" highlight>A股资源</Link>
-              <Link href="/stockdata/index-basic?indexCode=000979.CSI" highlight>大宗商品</Link>
-              <Link href="/stockdata/index-basic?indexCode=399440.SZ" >国证钢铁</Link>
-              <Link href="/stockdata/index-basic?indexCode=000820.CSI" >煤炭指数</Link>
-              <Link href="/stockdata/index-basic?indexCode=000819.SH" >中证有色金属</Link>
-            </LinkGroup>
-            <LinkGroup title="科技">
-              <Link href="/stockdata/index-basic?indexCode=931186.CSI" highlight>中证科技</Link>
-              <Link href="/stockdata/index-basic?indexCode=000998.CSI" highlight>中证TMT</Link>
-              <Link href="/stockdata/index-basic?indexCode=000993.SH" highlight>全指信息</Link>
-              <Link href="/stockdata/index-basic?indexCode=h21081.CSI" >中证半导全收益</Link>
-              <Link href="/stockdata/index-basic?indexCode=000820.CSI" >煤炭指数</Link>
-              <Link href="/stockdata/index-basic?indexCode=921441.CSI" large >中证人工智能50全收益</Link>
-            </LinkGroup>
+            <VerticalGroup>
+              <LinkGroupVertical title="制造业">
+                <Link href="/stockdata/index-basic?indexCode=H30531.CSI" >精工制造</Link>
+                <Link href="/stockdata/index-basic?indexCode=930599.CSI" >中证高装</Link>
+                <Link href="/stockdata/index-basic?indexCode=930820.CSI" >CS高端装</Link>
+                <Link href="/stockdata/index-basic?indexCode=399967.SZ" >中证军工</Link>
+                <Link href="/stockdata/index-basic?indexCode=399967.SZ" >国证军工</Link>
+                <Link href="/stockdata/index-basic?indexCode=399417.SZ" >国证新能源车</Link>
+                <Link href="/stockdata/index-basic?indexCode=931151.CSI" >中证光伏产业</Link>
+              </LinkGroupVertical>
+              <LinkGroupVertical title="医药">
+                <Link href="/stockdata/index-basic?indexCode=000991.SH" >全指医药</Link>
+                <Link href="/stockdata/index-basic?indexCode=930791.CSI" >CS医药TI</Link>
+                <Link href="/stockdata/index-basic?indexCode=000933.SH" >中证医药</Link>
+                <Link href="/stockdata/index-basic?indexCode=399394.SZ" >国证医药</Link>
+                <Link href="/stockdata/index-basic?indexCode=h00121.SH" >上证医药主题全收益</Link>
+                <Link href="/stockdata/index-basic?indexCode=930743.CSI" >中证生物科技主题</Link>
+              </LinkGroupVertical>
+              <LinkGroupVertical title="消费">
+                <Link href="/stockdata/index-basic?indexCode=931139.CSI" >CS消费50</Link>
+                <Link href="/stockdata/index-basic?indexCode=000990.SH" >全指消费</Link>
+                <Link href="/stockdata/index-basic?indexCode=931068.CSI" >消费龙头</Link>
+                <Link href="/stockdata/index-basic?indexCode=000932.SH" >中证消费</Link>
+                <Link href="/stockdata/index-basic?indexCode=399997.SZ" >中证白酒</Link>
+                <Link href="/stockdata/index-basic?indexCode=399365.SZ" >国证农业</Link>
+              </LinkGroupVertical>
+              <LinkGroupVertical title="金融">
+                <Link href="/stockdata/index-basic?indexCode=000914.SH" >300金融</Link>
+                <Link href="/stockdata/index-basic?indexCode=000934.SH" >中证金融</Link>
+                <Link href="/stockdata/index-basic?indexCode=000992.SH" >全指金融</Link>
+              </LinkGroupVertical>
+              <LinkGroupVertical title="资源">
+                <Link href="/stockdata/index-basic?indexCode=000944.CSI" >内地资源</Link>
+                <Link href="/stockdata/index-basic?indexCode=000805.CSI" >A股资源</Link>
+                <Link href="/stockdata/index-basic?indexCode=000979.CSI" >大宗商品</Link>
+                <Link href="/stockdata/index-basic?indexCode=399440.SZ" >国证钢铁</Link>
+                <Link href="/stockdata/index-basic?indexCode=000820.CSI" >煤炭指数</Link>
+                <Link href="/stockdata/index-basic?indexCode=000819.SH" >中证有色金属</Link>
+              </LinkGroupVertical>
+              <LinkGroupVertical title="科技">
+                <Link href="/stockdata/index-basic?indexCode=931186.CSI" >中证科技</Link>
+                <Link href="/stockdata/index-basic?indexCode=000998.CSI" >中证TMT</Link>
+                <Link href="/stockdata/index-basic?indexCode=000993.SH" >全指信息</Link>
+                <Link href="/stockdata/index-basic?indexCode=h21081.CSI" >中证半导全收益</Link>
+                <Link href="/stockdata/index-basic?indexCode=000820.CSI" >煤炭指数</Link>
+                <Link href="/stockdata/index-basic?indexCode=921441.CSI" large >中证人工智能50全收益</Link>
+              </LinkGroupVertical>
+            </VerticalGroup>
             <LinkGroup title="策略指数">
               <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
             </LinkGroup>
