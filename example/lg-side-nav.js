@@ -26,7 +26,6 @@ class App extends React.Component {
       level1SwData: [],
       level2SwData: [],
       level3SwData: [],
-      selectedIndex: 13
     }
   }
 
@@ -53,15 +52,15 @@ class App extends React.Component {
   }
 
   handleMouseOver(e, index) {
-    // this.setState({
-    //   selectedIndex: index
-    // });
+    this.setState({
+      selectedIndex: index
+    });
   }
 
   handleMouseLeave(e) {
-    // this.setState({
-    //   selectedIndex: -1
-    // });
+    this.setState({
+      selectedIndex: -1
+    });
   }
 
   render() {
