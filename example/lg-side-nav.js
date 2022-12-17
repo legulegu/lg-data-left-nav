@@ -265,10 +265,18 @@ class App extends React.Component {
                 <Link href="/stockdata/index-basic?indexCode=921441.CSI" large >中证人工智能50全收益</Link>
               </LinkGroupVertical>
             </VerticalGroup>
-            <LinkGroup title="策略指数">
+            <LinkGroup title="其他主题指数">
+              <Link href="/stockdata/index-basic?indexCode=000159.SH">上证沪股通指数</Link>
+              <Link href="/stockdata/index-basic?indexCode=930901.SH">中证动漫游戏</Link>
+              <Link href="/stockdata/index-basic?indexCode=930742.CSI">中证电商</Link>
+              <Link href="/stockdata/index-basic?indexCode=930706.CSI">中证水泥</Link>
+              <Link href="/stockdata/index-basic?indexCode=000827.SH">中证环保</Link>
+              <Link href="/stockdata/index-basic?indexCode=399989.SZ">中证医疗</Link>
+              <Link href="/stockdata/index-basic?indexCode=399971.SZ">中证传媒</Link>
+              <Link href="/stockdata/index-basic?indexCode=399812.SZ">养老产业</Link>
+              <Link href="/stockdata/index-basic?indexCode=399438.SZ">国证电力</Link>
+              <Link href="/stockdata/index-basic?indexCode=399412.SZ">国证新能</Link>
               <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
-            </LinkGroup>
-            <LinkGroup title="雪球指数">
               <Link href="/stockdata/index-basic?indexCode=930759.CSI">雪球100</Link>
               <Link href="/stockdata/index-basic?indexCode=930760.CSI">雪球智选</Link>
             </LinkGroup>
