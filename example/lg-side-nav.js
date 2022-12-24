@@ -399,6 +399,9 @@ class App extends React.Component {
               <Link href="/stockdata/ashares-congestion" style={{ width: '200px' }}>大盘拥挤度(逃顶利器)</Link>
               <Link href="/stockdata/sw-congestion" style={{ width: '200px' }}>行业拥挤度</Link>
             </LinkGroup>
+            <LinkGroup title="小市值">
+              <Link href="/stockdata/low-market-cap" style={{ width: '200px' }}>小市值因子拥挤度和因子估值</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 17}>
             <LinkGroup>
