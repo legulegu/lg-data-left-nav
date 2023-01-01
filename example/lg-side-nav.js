@@ -279,6 +279,7 @@ class App extends React.Component {
               <Link href="/stockdata/index-basic?indexCode=399354.SZ">分析师指数</Link>
               <Link href="/stockdata/index-basic?indexCode=930759.CSI">雪球100</Link>
               <Link href="/stockdata/index-basic?indexCode=930760.CSI">雪球智选</Link>
+              <Link href="/stockdata/index-basic?indexCode=000824.SH">中证国企红利</Link>
             </LinkGroup>
           </NavPanel >
           <NavPanel show={this.state.selectedIndex === 12}>
