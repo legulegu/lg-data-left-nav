@@ -314,12 +314,12 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup title="沪深港通">
-              <Link href="/stockdata/hk-hold-sort" highlight>*北向资金买入排名</Link>
-              <Link href="/stockdata/hu-shen-gang-tong" highlight>*沪深港通资金流向</Link>
-              <Link href="/stockdata/hu-gu-tong">沪股通</Link>
-              <Link href="/stockdata/shen-gu-tong">深股通</Link>
-              <Link href="/stockdata/gang-gu-tong-hu">港股通（沪）</Link>
-              <Link href="/stockdata/gang-gu-tong-shen">港股通（深）</Link>
+              <Link href="/stockdata/hk-hold-sort" highlight large>*北向资金买入排名</Link>
+              <Link href="/stockdata/hu-shen-gang-tong" highlight large>*沪深港通资金流向</Link>
+              <Link href="/stockdata/hu-gu-tong" large>沪股通</Link>
+              <Link href="/stockdata/shen-gu-tong" large>深股通</Link>
+              <Link href="/stockdata/gang-gu-tong-hu" large>港股通（沪）</Link>
+              <Link href="/stockdata/gang-gu-tong-shen" large>港股通（深）</Link>
             </LinkGroup>
             <LinkGroup title="融资融券">
               <Link href="/stockdata/margin-trading" highlight>*融资融券变动</Link>
@@ -367,10 +367,10 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
             <LinkGroup>
-              <Link href="/stockdata/pmi">PMI走势</Link>
-              <Link href="/stockdata/m1m2">M1M2走势图</Link>
-              <Link href="/stockdata/m1m2-mom">M1M2和指数走势</Link>
-              <Link href="/stockdata/broadmoney" highlight>M1-M2剪刀差</Link>
+              <Link href="/stockdata/pmi" large>PMI走势</Link>
+              <Link href="/stockdata/m1m2" large>M1M2走势图</Link>
+              <Link href="/stockdata/m1m2-mom" large>M1M2和指数走势</Link>
+              <Link href="/stockdata/broadmoney" highlight large>M1-M2剪刀差</Link>
               <Link href="/stockdata/m2-gdp" highlight large>M2/GDP</Link>
               <Link href="/stockdata/m1-ppi" highlight large>M1-PPI</Link>
             </LinkGroup>
