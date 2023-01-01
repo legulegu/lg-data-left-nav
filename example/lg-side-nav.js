@@ -350,19 +350,19 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
             <LinkGroup>
-              <Link href="/stockdata/below-net-asset-statistics?marketId=1">全部A股 破净股统计</Link>
-              <Link href="/stockdata/below-net-asset-statistics?marketId=000300.XSHG" >沪深300 破净股统计</Link>
-              <Link href="/stockdata/below-net-asset-statistics?marketId=000016.SH" >上证50 破净股统计</Link>
-              <Link href="/stockdata/below-net-asset-statistics?marketId=000905.SH" >中证500 破净股统计</Link>
-              <Link href="/stockdata/china-10-year-bond-yield" style={{ width: '250px' }}>股债轮动指标(十年国债倒数与PE)</Link>
-              <Link href="/stockdata/market-turn-over-ratio-statistics">换手率占比统计</Link>
-              <Link href="/stockdata/marketcap-gdp" highlight>总市值比GDP</Link>
-              <Link href="/stockdata/equity-bond-spread" highlight>股债利差</Link>
-              <Link href="/stockdata/ma-statistics" highlight>5/20/50日均线统计</Link>
-              <Link href="/stockdata/kdj-statistics">KDJ指标平均值</Link>
+              <Link href="/stockdata/below-net-asset-statistics?marketId=1" large>全部A股 破净股统计</Link>
+              <Link href="/stockdata/below-net-asset-statistics?marketId=000300.XSHG" large>沪深300 破净股统计</Link>
+              <Link href="/stockdata/below-net-asset-statistics?marketId=000016.SH" large>上证50 破净股统计</Link>
+              <Link href="/stockdata/below-net-asset-statistics?marketId=000905.SH" large>中证500 破净股统计</Link>
+              <Link href="/stockdata/market-turn-over-ratio-statistics" large>换手率占比统计</Link>
+              <Link href="/stockdata/marketcap-gdp" highlight large>总市值比GDP</Link>
+              <Link href="/stockdata/equity-bond-spread" highlight large>股债利差</Link>
+              <Link href="/stockdata/ma-statistics" highlight large>5/20/50日均线统计</Link>
+              <Link href="/stockdata/kdj-statistics" large>KDJ指标平均值</Link>
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
               <Link href="/stockdata/stock-day-limit" large>沪深A股涨停板特征统计</Link>
               <Link href="/stockdata/market-style?indexCode=1" large>恐慌&贪心指标</Link>
+              <Link href="/stockdata/china-10-year-bond-yield" style={{ width: '250px' }} large>股债轮动指标(十年国债倒数与PE)</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
