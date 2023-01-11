@@ -322,7 +322,8 @@ class App extends React.Component {
               <Link href="/stockdata/gang-gu-tong-shen" large>港股通（深）</Link>
             </LinkGroup>
             <LinkGroup title="融资融券">
-              <Link href="/stockdata/margin-trading" highlight>*融资融券变动</Link>
+              <Link href="/stockdata/margin-trading">*融资融券变动</Link>
+              <Link href="/stockdata/rzrqye">*融资融券余额</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 5}>
