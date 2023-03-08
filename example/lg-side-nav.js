@@ -261,7 +261,6 @@ class App extends React.Component {
                 <Link href="/stockdata/index-basic?indexCode=000998.CSI" >中证TMT</Link>
                 <Link href="/stockdata/index-basic?indexCode=000993.SH" >全指信息</Link>
                 <Link href="/stockdata/index-basic?indexCode=h21081.CSI" >中证半导全收益</Link>
-                <Link href="/stockdata/index-basic?indexCode=000820.CSI" >煤炭指数</Link>
                 <Link href="/stockdata/index-basic?indexCode=921441.CSI" large >中证人工智能50全收益</Link>
               </LinkGroupVertical>
             </VerticalGroup>
