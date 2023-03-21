@@ -366,13 +366,20 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
-            <LinkGroup>
-              <Link href="/stockdata/pmi" large>PMI走势</Link>
-              <Link href="/stockdata/m1m2" large>M1M2走势图</Link>
-              <Link href="/stockdata/m1m2-mom" large>M1M2和指数走势</Link>
-              <Link href="/stockdata/broadmoney" highlight large>M1-M2剪刀差</Link>
-              <Link href="/stockdata/m2-gdp" highlight large>M2/GDP</Link>
-              <Link href="/stockdata/m1-ppi" highlight large>M1-PPI</Link>
+            <LinkGroup title="央行统计">
+              <Link href="/stockdata/aggregate-financing-to-the-real-economy-vs-a" >社会融资规模增速</Link>
+              <Link href="/stockdata/aggregate-financing-to-the-real-economy-vs-m2" >社会融资规模增速与M2</Link>
+              <Link href="/stockdata/mid-long-loans" >中长期贷款增速</Link>
+              <Link href="/stockdata/enterprise-mid-long-loans" >企业端中长期贷款增速</Link>
+              <Link href="/stockdata/residents-mid-long-loans">居民端中长期贷款增速</Link>
+              <Link href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
+              <Link href="/stockdata/m1m2">M1M2总量</Link>
+              <Link href="/stockdata/broadmoney">M1-M2剪刀差</Link>
+              <Link href="/stockdata/m1m2-mom">M1同比</Link>
+              <Link href="/stockdata/m2-yoy">M2同比</Link>
+              <Link href="/stockdata/m2-gdp">M2/GDP</Link>
+              <Link href="/stockdata/m1-ppi">M1-PPI</Link>
+              <Link href="/stockdata/m2yoy-gdp">M2同比与名义GDP之差</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
