@@ -408,6 +408,13 @@ class App extends React.Component {
               <Link href="/stockdata/cn-pmi-xdd-kc">中国官方PMI-新订单&库存</Link>
               <Link href="/stockdata/cn-pmi-cyryzs">中国官方PMI-从业人员指数</Link>
             </LinkGroup>
+            <LinkGroup title="宏观Beta因子">
+              <Link href="/stockdata/us-dollar-index-vs-a">美元指数</Link>
+              <Link href="/stockdata/rmb-us-dollar-exchange-vs-a">美元人民币中间价</Link>
+              <Link href="/stockdata/US-10-year-bond-yield-vs-a">美国国债收益率:10年</Link>
+              <Link href="/stockdata/US-real-rate-of-return-vs-a">美国国债实际收益率:10年</Link>
+              <Link href="/stockdata/china-bond-tb-ytm-10Y">中国国债到期收益率:10年</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
