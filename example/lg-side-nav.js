@@ -367,53 +367,53 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
             <LinkGroup title="央行统计">
-              <Link large href="/stockdata/aggregate-financing-to-the-real-economy-vs-a" >社会融资规模增速</Link>
-              <Link large href="/stockdata/aggregate-financing-to-the-real-economy-vs-m2"  >社会融资规模增速与M2</Link>
-              <Link large href="/stockdata/mid-long-loans" >中长期贷款增速</Link>
-              <Link large href="/stockdata/enterprise-mid-long-loans"  >企业端中长期贷款增速</Link>
-              <Link large href="/stockdata/residents-mid-long-loans">居民端中长期贷款增速</Link>
-              <Link large href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
-              <Link large href="/stockdata/m1m2">M1M2总量</Link>
-              <Link large href="/stockdata/broadmoney">M1-M2剪刀差</Link>
-              <Link large href="/stockdata/m1m2-mom">M1同比</Link>
-              <Link large href="/stockdata/m2-yoy">M2同比</Link>
-              <Link large href="/stockdata/m2-gdp">M2/GDP</Link>
-              <Link large href="/stockdata/m1-ppi">M1-PPI</Link>
-              <Link large href="/stockdata/m2yoy-gdp">M2同比与名义GDP之差</Link>
+              <Link middle href="/stockdata/aggregate-financing-to-the-real-economy-vs-a" >社会融资规模增速</Link>
+              <Link middle href="/stockdata/aggregate-financing-to-the-real-economy-vs-m2"  >社会融资规模增速与M2</Link>
+              <Link middle href="/stockdata/mid-long-loans" >中长期贷款增速</Link>
+              <Link middle href="/stockdata/enterprise-mid-long-loans"  >企业端中长期贷款增速</Link>
+              <Link middle href="/stockdata/residents-mid-long-loans">居民端中长期贷款增速</Link>
+              <Link middle href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
+              <Link middle href="/stockdata/m1m2">M1M2总量</Link>
+              <Link middle href="/stockdata/broadmoney">M1-M2剪刀差</Link>
+              <Link middle href="/stockdata/m1m2-mom">M1同比</Link>
+              <Link middle href="/stockdata/m2-yoy">M2同比</Link>
+              <Link middle href="/stockdata/m2-gdp">M2/GDP</Link>
+              <Link middle href="/stockdata/m1-ppi">M1-PPI</Link>
+              <Link middle href="/stockdata/m2yoy-gdp">M2同比与名义GDP之差</Link>
             </LinkGroup>
             <LinkGroup title="经济总量">
-              <Link large href="/stockdata/gdp-yoy-normal-gdp-quarter">中国实际GDP</Link>
-              <Link large href="/stockdata/gdpyoy-vs-m2yoy">中国名义GDP当年累计同比</Link>
-              <Link large href="/stockdata/power-generation">中国发电量</Link>
-              <Link large href="/stockdata/good-transported">货运量</Link>
-              <Link large href="/stockdata/rscg">社会消费品零售</Link>
-              <Link large href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
+              <Link middle href="/stockdata/gdp-yoy-normal-gdp-quarter">中国实际GDP</Link>
+              <Link middle href="/stockdata/gdpyoy-vs-m2yoy">中国名义GDP当年累计同比</Link>
+              <Link middle href="/stockdata/power-generation">中国发电量</Link>
+              <Link middle href="/stockdata/good-transported">货运量</Link>
+              <Link middle href="/stockdata/rscg">社会消费品零售</Link>
+              <Link middle href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
             </LinkGroup>
             <LinkGroup title="物价">
-              <Link href="/stockdata/cpi" large>CPI同比</Link>
-              <Link href="/stockdata/ppi" large>PPI同比</Link>
-              <Link href="/stockdata/ppi-cpi" large>PPI与CPI之差</Link>
-              <Link href="/stockdata/ppi-ppirm" large>PPI与PPIRM之差</Link>
+              <Link href="/stockdata/cpi" middle>CPI同比</Link>
+              <Link href="/stockdata/ppi" middle>PPI同比</Link>
+              <Link href="/stockdata/ppi-cpi" middle>PPI与CPI之差</Link>
+              <Link href="/stockdata/ppi-ppirm" middle>PPI与PPIRM之差</Link>
             </LinkGroup>
             <LinkGroup title="外贸">
-              <Link href="/stockdata/customs-import-export-volume" large>进出口总值同比增长</Link>
-              <Link href="/stockdata/customs-export-volume" large>出口总值同比增长</Link>
-              <Link href="/stockdata/customs-import-volume" large>进口总值同比增长</Link>
-              <Link href="/stockdata/customs-dif-volume" large>进出口差额 累计差额</Link>
+              <Link href="/stockdata/customs-import-export-volume" middle>进出口总值同比增长</Link>
+              <Link href="/stockdata/customs-export-volume" middle>出口总值同比增长</Link>
+              <Link href="/stockdata/customs-import-volume" middle>进口总值同比增长</Link>
+              <Link href="/stockdata/customs-dif-volume" middle>进出口差额 累计差额</Link>
             </LinkGroup>
             <LinkGroup title="制造服务">
-              <Link href="/stockdata/industrial-enterprise-profit" large>工业企业利润同比</Link>
-              <Link href="/stockdata/industrial-enterprise-stock" large>工业企业产成品库存同比</Link>
-              <Link href="/stockdata/pmi" large>中国官方PMI</Link>
-              <Link href="/stockdata/cn-pmi-xdd-kc" large>中国官方PMI-新订单&库存</Link>
-              <Link href="/stockdata/cn-pmi-cyryzs" large>中国官方PMI-从业人员指数</Link>
+              <Link href="/stockdata/industrial-enterprise-profit" middle>工业企业利润同比</Link>
+              <Link href="/stockdata/industrial-enterprise-stock" middle>工业企业产成品库存同比</Link>
+              <Link href="/stockdata/pmi" middle>中国官方PMI</Link>
+              <Link href="/stockdata/cn-pmi-xdd-kc" middle>中国官方PMI-新订单&库存</Link>
+              <Link href="/stockdata/cn-pmi-cyryzs" middle>中国官方PMI-从业人员指数</Link>
             </LinkGroup>
             <LinkGroup title="宏观Beta因子">
-              <Link href="/stockdata/us-dollar-index-vs-a" large >美元指数</Link>
-              <Link href="/stockdata/rmb-us-dollar-exchange-vs-a" large >美元人民币中间价</Link>
-              <Link href="/stockdata/US-10-year-bond-yield-vs-a" large>美国国债收益率:10年</Link>
-              <Link href="/stockdata/US-real-rate-of-return-vs-a" large>美国国债实际收益率:10年</Link>
-              <Link href="/stockdata/china-bond-tb-ytm-10Y" large>中国国债到期收益率:10年</Link>
+              <Link href="/stockdata/us-dollar-index-vs-a" middle >美元指数</Link>
+              <Link href="/stockdata/rmb-us-dollar-exchange-vs-a" middle >美元人民币中间价</Link>
+              <Link href="/stockdata/US-10-year-bond-yield-vs-a" middle>美国国债收益率:10年</Link>
+              <Link href="/stockdata/US-real-rate-of-return-vs-a" middle>美国国债实际收益率:10年</Link>
+              <Link href="/stockdata/china-bond-tb-ytm-10Y" middle>中国国债到期收益率:10年</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
