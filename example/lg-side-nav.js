@@ -381,6 +381,14 @@ class App extends React.Component {
               <Link href="/stockdata/m1-ppi">M1-PPI</Link>
               <Link href="/stockdata/m2yoy-gdp">M2同比与名义GDP之差</Link>
             </LinkGroup>
+            <LinkGroup title="经济总量">
+              <Link href="/stockdata/gdp-yoy-normal-gdp-quarter">中国实际GDP</Link>
+              <Link href="/stockdata/gdpyoy-vs-m2yoy">中国名义GDP当年累计同比</Link>
+              <Link href="/stockdata/power-generation">中国发电量</Link>
+              <Link href="/stockdata/good-transported">货运量</Link>
+              <Link href="/stockdata/rscg">社会消费品零售</Link>
+              <Link href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
