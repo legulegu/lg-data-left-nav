@@ -389,6 +389,18 @@ class App extends React.Component {
               <Link href="/stockdata/rscg">社会消费品零售</Link>
               <Link href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
             </LinkGroup>
+            <LinkGroup title="物价">
+              <Link href="/stockdata/cpi">CPI同比</Link>
+              <Link href="/stockdata/ppi">PPI同比</Link>
+              <Link href="/stockdata/ppi-cpi">PPI与CPI之差</Link>
+              <Link href="/stockdata/ppi-ppirm">PPI与PPIRM之差</Link>
+            </LinkGroup>
+            <LinkGroup title="外贸">
+              <Link href="/stockdata/customs-import-export-volume">进口总值同比增长</Link>
+              <Link href="/stockdata/customs-export-volume">出口总值同比增长</Link>
+              <Link href="/stockdata/customs-import-volume">出口总值同比增长</Link>
+              <Link href="/stockdata/customs-dif-volume">进出口差额 累计差额</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
