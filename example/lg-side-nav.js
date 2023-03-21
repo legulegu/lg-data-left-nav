@@ -401,6 +401,13 @@ class App extends React.Component {
               <Link href="/stockdata/customs-import-volume">进口总值同比增长</Link>
               <Link href="/stockdata/customs-dif-volume">进出口差额 累计差额</Link>
             </LinkGroup>
+            <LinkGroup title="制造服务">
+              <Link href="/stockdata/industrial-enterprise-profit">工业企业利润同比</Link>
+              <Link href="/stockdata/industrial-enterprise-stock">工业企业产成品库存同比</Link>
+              <Link href="/stockdata/pmi">中国官方PMI</Link>
+              <Link href="/stockdata/cn-pmi-xdd-kc">中国官方PMI-新订单&库存</Link>
+              <Link href="/stockdata/cn-pmi-cyryzs">中国官方PMI-从业人员指数</Link>
+            </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
             <LinkGroup>
