@@ -396,9 +396,9 @@ class App extends React.Component {
               <Link href="/stockdata/ppi-ppirm">PPI与PPIRM之差</Link>
             </LinkGroup>
             <LinkGroup title="外贸">
-              <Link href="/stockdata/customs-import-export-volume">进口总值同比增长</Link>
+              <Link href="/stockdata/customs-import-export-volume">进出口总值同比增长</Link>
               <Link href="/stockdata/customs-export-volume">出口总值同比增长</Link>
-              <Link href="/stockdata/customs-import-volume">出口总值同比增长</Link>
+              <Link href="/stockdata/customs-import-volume">进口总值同比增长</Link>
               <Link href="/stockdata/customs-dif-volume">进出口差额 累计差额</Link>
             </LinkGroup>
           </NavPanel>
