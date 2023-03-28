@@ -362,6 +362,7 @@ class App extends React.Component {
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
               <Link href="/stockdata/stock-day-limit" large>沪深A股涨停板特征统计</Link>
               <Link href="/stockdata/market-style?indexCode=1" large>恐慌&贪心指标</Link>
+              <Link href="/stockdata/market-style-rotation" large>价值中小盘风格轮动</Link>
               <Link href="/stockdata/china-10-year-bond-yield" style={{ width: '250px' }} large>股债轮动指标(十年国债倒数与PE)</Link>
             </LinkGroup>
           </NavPanel>
@@ -388,6 +389,7 @@ class App extends React.Component {
               <Link middle href="/stockdata/good-transported">货运量</Link>
               <Link middle href="/stockdata/rscg">社会消费品零售</Link>
               <Link middle href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
+              <Link middle href="/stockdata/fixed-investments">固定资产投资累计增速</Link>
             </LinkGroup>
             <LinkGroup title="物价">
               <Link href="/stockdata/cpi" middle>CPI同比</Link>
