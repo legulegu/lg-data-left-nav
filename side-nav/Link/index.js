@@ -6,7 +6,7 @@ const Link = props => {
   return (
     <a
       href={props.href}
-      className={classNames("lg-side-nav-link", { "lg-side-nav-link-middle": props.middle }, { "lg-side-nav-link-large": props.large }, { "lg-side-nav-link-hight-light": props.highlight })}
+      className={classNames("lg-side-nav-link", { "lg-side-nav-link-middle": props.middle }, { "lg-side-nav-link-large": props.large }, { "lg-side-nav-link-max": props.max }, { "lg-side-nav-link-hight-light": props.highlight })}
       {...props}
     >
       {props.children}

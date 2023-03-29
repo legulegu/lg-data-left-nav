@@ -387,6 +387,7 @@ class App extends React.Component {
               <Link middle href="/stockdata/gdpyoy-vs-m2yoy">中国名义GDP当年累计同比</Link>
               <Link middle href="/stockdata/power-generation">中国发电量</Link>
               <Link middle href="/stockdata/good-transported">货运量</Link>
+              <Link middle href="/stockdata/railway-freight-volume">铁路货运量</Link>
               <Link middle href="/stockdata/rscg">社会消费品零售</Link>
               <Link middle href="/stockdata/urban-unemployment-rate">城镇调查失业率</Link>
               <Link middle href="/stockdata/fixed-investments">固定资产投资累计增速</Link>
@@ -404,8 +405,9 @@ class App extends React.Component {
               <Link href="/stockdata/customs-dif-volume" middle>进出口差额 累计差额</Link>
             </LinkGroup>
             <LinkGroup title="制造服务">
-              <Link href="/stockdata/industrial-enterprise-profit" middle>工业企业利润同比</Link>
-              <Link href="/stockdata/industrial-enterprise-stock" middle>工业企业产成品库存同比</Link>
+              <Link href="/stockdata/industrial-enterprise-profit" max>工业企业利润总额累计增长</Link>
+              <Link href="/stockdata/industrial-enterprise-stock" max>工业企业产成品存货累计增长</Link>
+              <Link href="/stockdata/industrial-enterprise-loss" max>工业亏损企业亏损累计增长</Link>
               <Link href="/stockdata/pmi" middle>中国官方PMI</Link>
               <Link href="/stockdata/cn-pmi-xdd-kc" middle>中国官方PMI-新订单&库存</Link>
               <Link href="/stockdata/cn-pmi-cyryzs" middle>中国官方PMI-从业人员指数</Link>
