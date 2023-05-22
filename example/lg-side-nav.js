@@ -70,7 +70,6 @@ class App extends React.Component {
     });
   }
 
-
   handleMouseLeaveItem(e) {
     if (timeoutIds.length > 0) {
       timeoutIds.forEach((timeoutId) => {
