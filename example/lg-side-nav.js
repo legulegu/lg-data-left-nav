@@ -429,7 +429,8 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 15}>
             <LinkGroup>
-              <Link href="/stockdata/sw-market-width" style={{ width: '200px' }}>市场宽度（申万行业）</Link>
+              <Link href="/stockdata/sw-market-width" style={{ width: '200px' }}>市场宽度(申万行业1级)</Link>
+              <Link href="/stockdata/sw-market-width/sec-level" style={{ width: '200px' }}>市场宽度(申万行业2级)</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 16}>
@@ -443,7 +444,8 @@ class App extends React.Component {
             </LinkGroup>
             <LinkGroup title="拥挤度">
               <Link href="/stockdata/ashares-congestion" style={{ width: '200px' }}>大盘拥挤度(逃顶利器)</Link>
-              <Link href="/stockdata/sw-congestion" style={{ width: '200px' }}>行业拥挤度</Link>
+              <Link href="/stockdata/sw-congestion" style={{ width: '200px' }}>行业拥挤度(申万一级)</Link>
+              <Link href="/stockdata/sw-congestion/sec-level" style={{ width: '200px' }}>行业拥挤度(申万二级)</Link>
             </LinkGroup>
             <LinkGroup title="小市值">
               <Link href="/stockdata/low-market-cap" style={{ width: '200px' }}>小市值因子拥挤度和因子估值</Link>
