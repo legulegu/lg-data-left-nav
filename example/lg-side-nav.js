@@ -16,12 +16,16 @@ import getUrl from "./url";
 import VerticalGroup from "../side-nav/VerticalGroup";
 import LinkGroupVertical from "../side-nav/LinkGroupVertical";
 
+
+let timeoutIds = []
+
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.handleMouseLeaveItem = this.handleMouseLeaveItem.bind(this);
     this.state = {
       level1SwData: [],
       level2SwData: [],
@@ -51,10 +55,13 @@ class App extends React.Component {
       });
   }
 
-  handleMouseOver(e, index) {
-    this.setState({
-      selectedIndex: index
-    });
+  handleMouseEnter(e, index) {
+    const id = setTimeout(() => {
+      this.setState({
+        selectedIndex: index
+      });
+    }, 500)
+    timeoutIds.push(id)
   }
 
   handleMouseLeave(e) {
@@ -63,50 +70,60 @@ class App extends React.Component {
     });
   }
 
+
+  handleMouseLeaveItem(e) {
+    if (timeoutIds.length > 0) {
+      timeoutIds.forEach((timeoutId) => {
+        clearTimeout(timeoutId)
+      })
+    }
+    timeoutIds = [];
+  }
+
   render() {
     return (
       <div className={classNames('lg-side-nav-container')} onMouseLeave={this.handleMouseLeave}>
         <Nav title="全部分类">
-          <NavItem index={1} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 1}>
+          <NavItem index={1} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 1}>
             A股市盈率
           </NavItem>
-          <NavItem index={2} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 2}>
+          <NavItem index={2} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 2}>
             A股市净率
           </NavItem>
-          <NavItem index={3} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 3}>
+          <NavItem index={3} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 3}>
             中证行业
           </NavItem>
-          <NavItem index={12} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 12}>
+          <NavItem index={12} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 12}>
             申万行业
           </NavItem>
-          <NavItem index={13} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 13}>
+          <NavItem index={13} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 13}>
             规模指数/行业代表
           </NavItem>
-          <NavItem index={4} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 4}>
+          <NavItem index={4} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 4}>
             沪深港通/融资融券
           </NavItem>
-          <NavItem index={7} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 7}>
+          <NavItem index={7} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 7}>
             底部研究
           </NavItem>
-          <NavItem index={15} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 15}>
+          <NavItem index={15} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 15}>
             市场宽度
           </NavItem>
-          <NavItem index={16} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 16}>
+          <NavItem index={16} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 16}>
             景气度/拥挤度研究
           </NavItem>
-          <NavItem index={9} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 9}>
+          <NavItem index={9} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 9}>
             宏观数据
           </NavItem>
-          <NavItem index={17} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 17}>
+          <NavItem index={17} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 17}>
             券商十大金股
           </NavItem>
-          <NavItem index={5} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 5}>
+          <NavItem index={5} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 5}>
             美股/港股
           </NavItem>
-          <NavItem index={11} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 11}>
+          <NavItem index={11} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 11}>
             基金
           </NavItem>
-          <NavItem index={14} handleMouseOver={this.handleMouseOver} highlight={this.state.selectedIndex === 14}>
+          <NavItem index={14} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 14}>
             综合
           </NavItem>
         </Nav>
