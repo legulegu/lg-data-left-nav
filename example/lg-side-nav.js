@@ -437,10 +437,21 @@ class App extends React.Component {
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
-            <LinkGroup>
+            <LinkGroup title="基金仓位走势图">
               <Link href="/stockdata/fund-position/pos-stock" style={{ width: '200px' }}>股票型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-pingheng" style={{ width: '200px' }}>平衡混合型基金仓位走势图</Link>
               <Link href="/stockdata/fund-position/pos-linghuo" style={{ width: '200px' }}>灵活配置型基金仓位走势图</Link>
+            </LinkGroup>
+            <LinkGroup title="排名">
+              <Link href="/stockdata/fund-sw-industry-holding?level=1&endDate=20230331" style={{ width: '200px' }}>基金重仓行业排名-申万1级</Link>
+              <Link href="/stockdata/fund-sw-industry-holding?level=2&endDate=20230331" style={{ width: '200px' }}>基金重仓行业排名-申万2级</Link>
+              <Link href="/stockdata/fund-shareholding-rankings" style={{ width: '200px' }}>基金重仓股排名</Link>
+            </LinkGroup>
+            <LinkGroup title="仓位">
+              <Link href="/stockdata/fund-holding-rate-history?industryCode=主动型基金仓位(Top10)&keys=fund_sw_主动型基金仓位(Top10),hs300" style={{ width: '200px' }}>主动型基金仓位</Link>
+              <Link href="/stockdata/fund-holding-rate-history?industryCode=股票型仓位(Top10)&keys=fund_sw_股票型仓位(Top10),hs300" style={{ width: '200px' }}>股票型仓位</Link>
+              <Link href="/stockdata/fund-holding-rate-history?industryCode=混合型仓位(Top10)&keys=fund_sw_混合型仓位(Top10),hs300" style={{ width: '200px' }}>混合型仓位</Link>
+              <Link href="/stockdata/fund-holding-rate-history?industryCode=灵活型仓位(Top10)&keys=fund_sw_灵活型仓位(Top10),hs300" style={{ width: '200px' }}>灵活型仓位</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 15}>
