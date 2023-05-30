@@ -448,10 +448,16 @@ class App extends React.Component {
               <Link href="/stockdata/fund-shareholding-rankings" style={{ width: '200px' }}>基金重仓股排名</Link>
             </LinkGroup>
             <LinkGroup title="仓位">
-              <Link href="/stockdata/fund-holding-rate-history?industryCode=主动型基金仓位(Top10)&keys=fund_sw_主动型基金仓位(Top10),hs300" style={{ width: '220px',paddingRight: '20px' }}>主动型基金仓位-披露仓位计算版</Link>
+              <Link href="/stockdata/fund-holding-rate-history?industryCode=主动型基金仓位(Top10)&keys=fund_sw_主动型基金仓位(Top10),hs300" style={{ width: '220px', paddingRight: '20px' }}>主动型基金仓位-披露仓位计算版</Link>
               <Link href="/stockdata/fund-holding-rate-history?industryCode=股票型仓位(Top10)&keys=fund_sw_股票型仓位(Top10),hs300" style={{ width: '200px' }}>股票型仓位-披露仓位计算版</Link>
               <Link href="/stockdata/fund-holding-rate-history?industryCode=混合型仓位(Top10)&keys=fund_sw_混合型仓位(Top10),hs300" style={{ width: '200px' }}>混合型仓位-披露仓位计算版</Link>
               <Link href="/stockdata/fund-holding-rate-history?industryCode=灵活型仓位(Top10)&keys=fund_sw_灵活型仓位(Top10),hs300" style={{ width: '200px' }}>灵活型仓位-披露仓位计算版</Link>
+            </LinkGroup>
+            <LinkGroup title="基金重仓指数">
+              <Link href="/stockdata/index-basic?indexCode=800200.LG" >基金重仓前200名</Link>
+              <Link href="/stockdata/index-basic?indexCode=800100.LG" >基金重仓前100名</Link>
+              <Link href="/stockdata/index-basic?indexCode=800050.LG" >基金重仓前50名</Link>
+              <Link href="/stockdata/index-basic?indexCode=800020.LG" >基金重仓前20名</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 15}>
