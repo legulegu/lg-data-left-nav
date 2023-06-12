@@ -329,7 +329,6 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 4}>
             <LinkGroup title="沪深港通">
-              <Link href="/stockdata/hk-hold-sort" highlight large>*北向资金买入排名</Link>
               <Link href="/stockdata/hu-shen-gang-tong" highlight large>*沪深港通资金流向</Link>
               <Link href="/stockdata/hu-gu-tong" large>沪股通</Link>
               <Link href="/stockdata/shen-gu-tong" large>深股通</Link>
@@ -397,6 +396,7 @@ class App extends React.Component {
               <Link middle href="/stockdata/m2-gdp">M2/GDP</Link>
               <Link middle href="/stockdata/m1-ppi">M1-PPI</Link>
               <Link middle href="/stockdata/m2yoy-gdp">M2同比与名义GDP之差</Link>
+              <Link middle href="/stockdata/aggregate-financing-to-the-real-economy-m2">M2与社融剪刀差</Link>
             </LinkGroup>
             <LinkGroup title="经济总量">
               <Link middle href="/stockdata/gdp-yoy-normal-gdp-quarter">中国实际GDP</Link>
