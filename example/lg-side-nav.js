@@ -27,6 +27,7 @@ class App extends React.Component {
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.handleMouseLeaveItem = this.handleMouseLeaveItem.bind(this);
     this.state = {
+      selectedIndex: 7,
       level1SwData: [],
       level2SwData: [],
       level3SwData: [],
@@ -56,27 +57,27 @@ class App extends React.Component {
   }
 
   handleMouseEnter(e, index) {
-    const id = setTimeout(() => {
-      this.setState({
-        selectedIndex: index
-      });
-    }, 500)
-    timeoutIds.push(id)
+    // const id = setTimeout(() => {
+    //   this.setState({
+    //     selectedIndex: index
+    //   });
+    // }, 500)
+    // timeoutIds.push(id)
   }
 
   handleMouseLeave(e) {
-    this.setState({
-      selectedIndex: -1
-    });
+    // this.setState({
+    //   selectedIndex: -1
+    // });
   }
 
   handleMouseLeaveItem(e) {
-    if (timeoutIds.length > 0) {
-      timeoutIds.forEach((timeoutId) => {
-        clearTimeout(timeoutId)
-      })
-    }
-    timeoutIds = [];
+    // if (timeoutIds.length > 0) {
+    //   timeoutIds.forEach((timeoutId) => {
+    //     clearTimeout(timeoutId)
+    //   })
+    // }
+    // timeoutIds = [];
   }
 
   render() {
@@ -377,8 +378,14 @@ class App extends React.Component {
               <Link href="/stockdata/high-low-statistics" large>创新高、新低数量统计</Link>
               <Link href="/stockdata/stock-day-limit" large>沪深A股涨停板特征统计</Link>
               <Link href="/stockdata/market-style?indexCode=1" large>恐慌&贪心指标</Link>
+              <Link href="/stockdata/a-risk-premium" large highlight>A股风险溢价</Link>
+              <Link href="/stockdata/hk-risk-premium" large highlight>港股风险溢价</Link>
+              <Link href="/stockdata/hs300-risk-premium" large>沪深300风险溢价</Link>
+              <Link href="/stockdata/hs300-tcjr-risk-premium" large>沪深300(剔除金融)风险溢价</Link>
+              <Link href="/stockdata/sz50-risk-premium" large>上证50风险溢价</Link>
               <Link href="/stockdata/market-style-rotation" large>价值中小盘风格轮动</Link>
-              <Link href="/stockdata/china-10-year-bond-yield" style={{ width: '250px' }} large>股债轮动指标(十年国债倒数与PE)</Link>
+              <Link href="/stockdata/market-style-rotation-hs300-gz2000" large highlight>价值vs小盘风格轮动(沪深300vs国证2000)</Link>
+              <Link href="/stockdata/china-10-year-bond-yield" large>股债轮动指标(十年国债倒数与PE)</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 9}>
