@@ -27,7 +27,6 @@ class App extends React.Component {
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.handleMouseLeaveItem = this.handleMouseLeaveItem.bind(this);
     this.state = {
-      selectedIndex: 7,
       level1SwData: [],
       level2SwData: [],
       level3SwData: [],
@@ -57,27 +56,27 @@ class App extends React.Component {
   }
 
   handleMouseEnter(e, index) {
-    // const id = setTimeout(() => {
-    //   this.setState({
-    //     selectedIndex: index
-    //   });
-    // }, 500)
-    // timeoutIds.push(id)
+    const id = setTimeout(() => {
+      this.setState({
+        selectedIndex: index
+      });
+    }, 500)
+    timeoutIds.push(id)
   }
 
   handleMouseLeave(e) {
-    // this.setState({
-    //   selectedIndex: -1
-    // });
+    this.setState({
+      selectedIndex: -1
+    });
   }
 
   handleMouseLeaveItem(e) {
-    // if (timeoutIds.length > 0) {
-    //   timeoutIds.forEach((timeoutId) => {
-    //     clearTimeout(timeoutId)
-    //   })
-    // }
-    // timeoutIds = [];
+    if (timeoutIds.length > 0) {
+      timeoutIds.forEach((timeoutId) => {
+        clearTimeout(timeoutId)
+      })
+    }
+    timeoutIds = [];
   }
 
   render() {
