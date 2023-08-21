@@ -378,7 +378,7 @@ class App extends React.Component {
               <Link href="/stockdata/stock-day-limit" large>沪深A股涨停板特征统计</Link>
               <Link href="/stockdata/market-style?indexCode=1" large>恐慌&贪心指标</Link>
               <Link href="/stockdata/a-risk-premium" large highlight>A股风险溢价</Link>
-              <Link href="/stockdata/hk-risk-premium" large highlight>港股风险溢价</Link>
+              <Link href="/stockdata/hsi-risk-premium" large highlight>港股风险溢价</Link>
               <Link href="/stockdata/hs300-risk-premium" large>沪深300风险溢价</Link>
               <Link href="/stockdata/hs300-tcjr-risk-premium" large>沪深300(剔除金融)风险溢价</Link>
               <Link href="/stockdata/sz50-risk-premium" large>上证50风险溢价</Link>
