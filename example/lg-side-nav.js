@@ -382,8 +382,8 @@ class App extends React.Component {
               <Link href="/stockdata/hs300-risk-premium" large>沪深300风险溢价</Link>
               <Link href="/stockdata/hs300-tcjr-risk-premium" large>沪深300(剔除金融)风险溢价</Link>
               <Link href="/stockdata/sz50-risk-premium" large>上证50风险溢价</Link>
-              <Link href="/stockdata/market-style-rotation" large>价值中小盘风格轮动</Link>
-              <Link href="/stockdata/market-style-rotation-hs300-gz2000" large highlight>价值vs小盘风格轮动(沪深300vs国证2000)</Link>
+              <Link href="/stockdata/market-style-rotation" large>价值vs小盘风格轮动(沪深300vs中证500)</Link>
+              <Link href="/stockdata/market-style-rotation-hs300-gz2000" large>价值vs小盘风格轮动(沪深300vs国证2000)</Link>
               <Link href="/stockdata/market-style-rotation/gz2000-divided-by-hs300" large highlight>价值vs小盘风格轮动(国证2000比沪深300)</Link>
               <Link href="/stockdata/china-10-year-bond-yield" large>股债轮动指标(十年国债倒数与PE)</Link>
             </LinkGroup>
