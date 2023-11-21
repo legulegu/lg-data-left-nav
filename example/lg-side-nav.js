@@ -441,6 +441,7 @@ class App extends React.Component {
               <Link href="/stockdata/US-10-year-bond-yield-vs-a" middle>美国国债收益率:10年</Link>
               <Link href="/stockdata/US-real-rate-of-return-vs-a" middle>美国国债实际收益率:10年</Link>
               <Link href="/stockdata/china-bond-tb-ytm-10Y" middle>中国国债到期收益率:10年</Link>
+              <Link href="/stockdata/us-dollar-index-vs-gold" middle>现货黄金 vs 美元指数</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
