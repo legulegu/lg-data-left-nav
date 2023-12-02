@@ -89,9 +89,6 @@ class App extends React.Component {
           <NavItem index={2} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 2}>
             A股市净率
           </NavItem>
-          <NavItem index={3} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 3}>
-            中证行业
-          </NavItem>
           <NavItem index={12} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeaveItem} highlight={this.state.selectedIndex === 12}>
             申万行业
           </NavItem>
@@ -181,42 +178,6 @@ class App extends React.Component {
               <Link href="/stockdata/weight-pb?marketId=399006.SZ">创业板指市净率</Link>
               <Link href="/stockdata/weight-pb?marketId=399001.SZ">深证成指市净率</Link>
               <Link href="/stockdata/weight-pb?marketId=000001.SH">上证指数市净率</Link>
-            </LinkGroup>
-          </NavPanel>
-          <NavPanel show={this.state.selectedIndex === 3}>
-            <LinkGroup title="证监会分类">
-              <Link href="/stockdata/industry#zjh" large>数据总览*</Link>
-              <Link href="/stockdata/industry/zjh/A" large>农、林、牧、渔业</Link>
-              <Link href="/stockdata/industry/zjh/B" large>采矿业</Link>
-              <Link href="/stockdata/industry/zjh/C" large>制造业</Link>
-              <Link href="/stockdata/industry/zjh/D" large>电力、热力、燃气及水业</Link>
-              <Link href="/stockdata/industry/zjh/E" large>建筑业</Link>
-              <Link href="/stockdata/industry/zjh/F" large>批发和零售业</Link>
-              <Link href="/stockdata/industry/zjh/G" large>交通运输、仓储和邮政业</Link>
-              <Link href="/stockdata/industry/zjh/H" large>住宿和餐饮业</Link>
-              <Link href="/stockdata/industry/zjh/I" large>信息传输、软件和信息业</Link>
-              <Link href="/stockdata/industry/zjh/J" large>金融业</Link>
-              <Link href="/stockdata/industry/zjh/K" large>房地产业</Link>
-              <Link href="/stockdata/industry/zjh/L" large>租赁和商务服务业</Link>
-              <Link href="/stockdata/industry/zjh/M" large>科学研究和技术服务业</Link>
-              <Link href="/stockdata/industry/zjh/N" large>水利、环境和公共设施</Link>
-              <Link href="/stockdata/industry/zjh/O" large>居民服务、修理行业</Link>
-              <Link href="/stockdata/industry/zjh/P" large>教育</Link>
-              <Link href="/stockdata/industry/zjh/Q" large>卫生和社会工作业</Link>
-              <Link href="/stockdata/industry/zjh/R" large>文化、体育和娱乐业</Link>
-              <Link href="/stockdata/industry/zjh/S" large>综合</Link>
-            </LinkGroup>
-            <LinkGroup title="中证分类">
-              <Link href="/stockdata/industry#zz">数据总览*</Link>
-              <Link href="/stockdata/industry/zz/10">能源</Link>
-              <Link href="/stockdata/industry/zz/15">原材料</Link>
-              <Link href="/stockdata/industry/zz/20">工业</Link>
-              <Link href="/stockdata/industry/zz/25">可选消费</Link>
-              <Link href="/stockdata/industry/zz/30">主要消费</Link>
-              <Link href="/stockdata/industry/zz/35">医药卫生</Link>
-              <Link href="/stockdata/industry/zz/45">信息技术</Link>
-              <Link href="/stockdata/industry/zz/50">通信服务</Link>
-              <Link href="/stockdata/industry/zz/55">公用事业</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 13}>
