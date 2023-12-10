@@ -445,7 +445,8 @@ class App extends React.Component {
               <Link href="/stockdata/middle-avg-indicator?indicatorCode=roeYoy">ROE增长率</Link>
             </LinkGroup>
             <LinkGroup title="拥挤度">
-              <Link href="/stockdata/ashares-congestion" style={{ width: '200px' }}>大盘拥挤度(逃顶利器)</Link>
+              <Link href="/stockdata/ashares-congestion" style={{ width: '180px' }}>大盘拥挤度(逃顶利器)</Link>
+              <Link href="https://legulegu.com/stockdata/charts/426" style={{ width: '200px' }}>融资买入/成交额(逃顶利器)</Link>
               <Link href="/stockdata/sw-congestion" style={{ width: '200px' }}>行业拥挤度(申万一级)</Link>
               <Link href="/stockdata/sw-congestion/sec-level" style={{ width: '200px' }}>行业拥挤度(申万二级)</Link>
             </LinkGroup>
