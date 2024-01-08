@@ -204,13 +204,14 @@ class App extends React.Component {
                 <Link href="/stockdata/index-basic?indexCode=399417.SZ" >国证新能源车</Link>
                 <Link href="/stockdata/index-basic?indexCode=931151.CSI" >中证光伏产业</Link>
               </LinkGroupVertical>
-              <LinkGroupVertical title="医药">
+              <LinkGroupVertical title="医药/医疗">
                 <Link href="/stockdata/index-basic?indexCode=000991.SH" >全指医药</Link>
                 <Link href="/stockdata/index-basic?indexCode=930791.CSI" >CS医药TI</Link>
                 <Link href="/stockdata/index-basic?indexCode=000933.SH" >中证医药</Link>
                 <Link href="/stockdata/index-basic?indexCode=399394.SZ" >国证医药</Link>
                 <Link href="/stockdata/index-basic?indexCode=h00121.SH" >上证医药主题全收益</Link>
                 <Link href="/stockdata/index-basic?indexCode=930743.CSI" >中证生物科技主题</Link>
+                <Link href="/stockdata/index-basic?indexCode=399989.SZ" >中证医疗</Link>
               </LinkGroupVertical>
               <LinkGroupVertical title="消费">
                 <Link href="/stockdata/index-basic?indexCode=931139.CSI" >CS消费50</Link>
