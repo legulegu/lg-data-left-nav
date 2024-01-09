@@ -400,12 +400,14 @@ class App extends React.Component {
               <Link href="/stockdata/cn-pmi-cyryzs" middle>中国官方PMI-从业人员指数</Link>
             </LinkGroup>
             <LinkGroup title="宏观Beta因子">
+              <Link href="/stockdata/treasury-yield-stock-market" middle >美债长短端和A股同期</Link>
               <Link href="/stockdata/us-dollar-index-vs-a" middle >美元指数</Link>
               <Link href="/stockdata/rmb-us-dollar-exchange-vs-a" middle >美元人民币中间价</Link>
               <Link href="/stockdata/US-10-year-bond-yield-vs-a" middle>美国国债收益率:10年</Link>
               <Link href="/stockdata/US-real-rate-of-return-vs-a" middle>美国国债实际收益率:10年</Link>
               <Link href="/stockdata/china-bond-tb-ytm-10Y" middle>中国国债到期收益率:10年</Link>
               <Link href="/stockdata/us-dollar-index-vs-gold" middle>现货黄金 vs 美元指数</Link>
+              <Link href="/stockdata/fed-interest-rate-and-us-treasury-yield" middle>联邦基金利率和美债同期</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 11}>
