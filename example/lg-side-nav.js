@@ -401,6 +401,8 @@ class App extends React.Component {
             </LinkGroup>
             <LinkGroup title="宏观Beta因子">
               <Link href="/stockdata/treasury-yield-stock-market" middle >美债长短端和A股同期</Link>
+              <Link href="/stockdata/treasury-yield-spread-vs-cyb" middle >美债期限利差与创业板的同期</Link>
+              <Link href="/stockdata/treasury-yield-spread-vs-gzcz" middle >美债期限利差与国证成长指数同期</Link>
               <Link href="/stockdata/us-dollar-index-vs-a" middle >美元指数</Link>
               <Link href="/stockdata/rmb-us-dollar-exchange-vs-a" middle >美元人民币中间价</Link>
               <Link href="/stockdata/US-10-year-bond-yield-vs-a" middle>美国国债收益率:10年</Link>
