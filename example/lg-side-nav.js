@@ -362,7 +362,7 @@ class App extends React.Component {
               <Link middle href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
               <Link middle href="/stockdata/m1m2">M1M2总量</Link>
               <Link middle href="/stockdata/broadmoney">M1-M2剪刀差</Link>
-              <Link middle href="/stockdata/m1m2-mom">M1同比</Link>
+              <Link middle href="/stockdata/m1-yoy">M1同比</Link>
               <Link middle href="/stockdata/m2-yoy">M2同比</Link>
               <Link middle href="/stockdata/m2-gdp">M2/GDP</Link>
               <Link middle href="/stockdata/m1-ppi">M1-PPI</Link>
