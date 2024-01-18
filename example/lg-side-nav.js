@@ -403,6 +403,7 @@ class App extends React.Component {
               <Link href="/stockdata/treasury-yield-stock-market" middle >美债长短端和A股同期</Link>
               <Link href="/stockdata/treasury-yield-spread-vs-cyb" middle >美债期限利差与创业板的同期</Link>
               <Link href="/stockdata/treasury-yield-spread-vs-gzcz" middle >美债期限利差与国证成长指数同期</Link>
+              <Link href="/stockdata/treasury-yield-cn-us-spread-vs-hs300" middle >中美利差与沪深300同期</Link>
               <Link href="/stockdata/cn10y-us10y-spread-vs-hs300" middle >中美10年期国债利差与沪深300同期</Link>
               <Link href="/stockdata/us-dollar-index-vs-a" middle >美元指数</Link>
               <Link href="/stockdata/rmb-us-dollar-exchange-vs-a" middle >美元人民币中间价</Link>
