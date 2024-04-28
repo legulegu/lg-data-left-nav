@@ -307,9 +307,12 @@ class App extends React.Component {
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 5}>
             <LinkGroup title="美股">
-              <Link href="/stockdata/market/nasdaq">纳斯达克市盈率</Link>
-              <Link href="/stockdata/market/dow">道琼斯市盈率</Link>
-              <Link href="/stockdata/market/sandp" highlight>普标500市盈率</Link>
+              <Link href="/stockdata/charts/627" large>标普500席勒市盈率</Link>
+              <Link href="/stockdata/charts/628" large>标普500股息率</Link>
+              <Link href="/stockdata/charts/630" large>标普500市盈率</Link>
+              <Link href="/stockdata/charts/651" large>CNN 恐慌贪心指标</Link>
+              <Link href="/stockdata/charts/629" large>标普500股债利差</Link>
+              <Link href="/stockdata/us-stock-research-nav" large>其他所有美股数据</Link>
             </LinkGroup>
             <LinkGroup title="港股市盈率">
               <Link href="/stockdata/market/hsi" >恒生指数市盈率</Link>
@@ -318,6 +321,7 @@ class App extends React.Component {
               <Link href="/stockdata/market/hsu" >恒生公共指数</Link>
               <Link href="/stockdata/market/hsci">恒生工商指数</Link>
               <Link href="/stockdata/market/hscei">恒生中国企业指数</Link>
+              <Link href="/stockdata/hsi-overview">其他恒生主题指数</Link>
             </LinkGroup>
             <LinkGroup title="港股股息率">
               <Link href="/stockdata/market/hk/dv/hsi" >恒生指数股息率</Link>
@@ -326,6 +330,7 @@ class App extends React.Component {
               <Link href="/stockdata/market/hk/dv/hsu" >恒生公共指数</Link>
               <Link href="/stockdata/market/hk/dv/hsci">恒生工商指数</Link>
               <Link href="/stockdata/market/hk/dv/hscei">恒生中国企业指数</Link>
+              <Link href="/stockdata/hsi-overview">其他恒生主题指数</Link>
             </LinkGroup>
           </NavPanel>
           <NavPanel show={this.state.selectedIndex === 7}>
