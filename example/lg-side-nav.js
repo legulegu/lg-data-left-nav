@@ -225,6 +225,7 @@ class App extends React.Component {
                 <Link href="/stockdata/index-basic?indexCode=000914.SH" >300金融</Link>
                 <Link href="/stockdata/index-basic?indexCode=000934.SH" >中证金融</Link>
                 <Link href="/stockdata/index-basic?indexCode=000992.SH" >全指金融</Link>
+                <Link href="/stockdata/index-basic?indexCode=399986.CSI" >中证银行</Link>
               </LinkGroupVertical>
               <LinkGroupVertical title="资源">
                 <Link href="/stockdata/index-basic?indexCode=000944.CSI" >内地资源</Link>
