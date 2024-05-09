@@ -407,7 +407,7 @@ class App extends React.Component {
               <Link href="/stockdata/cn-pmi-cyryzs" middle>中国官方PMI-从业人员指数</Link>
             </LinkGroup>
             <LinkGroup title="宏观Beta因子">
-              <Link href="/stockdata/treasury-yield-stock-market" middle >美债长短端和A股同期</Link>
+              <Link href="/stockdata/treasury-yield-stock-market" middle >美债收益率与A股同期走势图</Link>
               <Link href="/stockdata/treasury-yield-spread-vs-cyb" middle >美债期限利差与创业板的同期</Link>
               <Link href="/stockdata/treasury-yield-spread-vs-gzcz" middle >美债期限利差与国证成长指数同期</Link>
               <Link href="/stockdata/treasury-yield-cn-us-spread-vs-hs300" middle >中美利差与沪深300同期</Link>
