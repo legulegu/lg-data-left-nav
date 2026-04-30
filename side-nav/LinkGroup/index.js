@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import "./link-group.scss";
+import "./link-group.css";
 
 const LinkGroup = props => {
     return (

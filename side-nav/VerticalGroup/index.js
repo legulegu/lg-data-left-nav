@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import "./vertical-group.scss";
+import "./vertical-group.css";
 
 const VerticalGroup = props => {
     return (

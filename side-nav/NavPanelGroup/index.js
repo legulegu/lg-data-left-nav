@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import "./nav-panel-group.scss";
+import "./nav-panel-group.css";
 
 const NavPanelGroup = props => {
   return (

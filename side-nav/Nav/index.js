@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import "./nav.scss";
+import "./nav.css";
 
 const Nav = props => {
   return (

@@ -1,6 +1,6 @@
 
 export function getToken() {
-  var MD5 = new Hashes.MD5;
+  var MD5 = new window.Hashes.MD5;
   var token = MD5.hex(formatDateForToken(new Date()));
   return token;
 }

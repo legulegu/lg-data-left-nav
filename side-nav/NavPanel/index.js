@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import "./panel.scss";
+import "./panel.css";
 
 const Panel = props => {
   return (

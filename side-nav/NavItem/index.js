@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import "./nav-item.scss";
+import "./nav-item.css";
 
 const NavItem = props => {
 
