@@ -22,6 +22,6 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build && cp build/lg-side-nav.js /Users/benweizhu/Documents/www.legulegu.com/legulegu.com/src/main/webapp/static/js/lg-side-nav.js && cp build/lg-side-nav.css /Users/benweizhu/Documents/www.legulegu.com/legulegu.com/src/main/webapp/static/css/lg-side-nav.css"
   }
 }

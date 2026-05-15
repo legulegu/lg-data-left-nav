@@ -1,0 +1,26 @@
+.lg-side-nav-container {
+  position: relative;
+  font-size: 16px;
+}
+
+/* 键盘聚焦样式 */
+.lg-side-nav-item:focus {
+  outline: 2px solid #2f81b7;
+  outline-offset: -2px;
+}
+
+/* 面板过渡动画 */
+.lg-side-nav-panel-group {
+  animation: fadeIn 0.15s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

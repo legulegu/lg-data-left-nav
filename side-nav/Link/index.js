@@ -2,23 +2,27 @@ import React from "react";
 import classNames from "classnames";
 import "./link.css";
 
-const Link = props => {
-  const href = props.href;
-  const middle = props.middle;
-  const large = props.large;
-  const max = props.max;
-  const highlight = props.highlight;
-  const children = props.children;
-  const className = props.className;
-
-  const rest = {};
-  const linkPropKeys = { href: 1, middle: 1, large: 1, max: 1, highlight: 1, children: 1, className: 1 };
-  for (var key in props) {
-    if (props.hasOwnProperty(key) && !linkPropKeys[key]) {
-      rest[key] = props[key];
-    }
-  }
-
+/**
+ * Link - 导航链接组件
+ * @param {string} href - 链接地址
+ * @param {boolean} middle - 中等宽度 (190px)
+ * @param {boolean} large - 大宽度 (200px)
+ * @param {boolean} max - 最大宽度 (250px)
+ * @param {boolean} highlight - 高亮样式（红色文字）
+ * @param {string} className - 额外 CSS 类
+ * @param {React.ReactNode} children - 链接内容
+ * @param {Object} rest - 其他传递给 <a> 标签的属性
+ */
+const Link = ({
+  href,
+  middle,
+  large,
+  max,
+  highlight,
+  className,
+  children,
+  ...rest
+}) => {
   return (
     <a
       href={href}
@@ -37,6 +41,15 @@ const Link = props => {
       {children}
     </a>
   );
+};
+
+Link.defaultProps = {
+  href: "#",
+  middle: false,
+  large: false,
+  max: false,
+  highlight: false,
+  className: "",
 };
 
 export default Link;
